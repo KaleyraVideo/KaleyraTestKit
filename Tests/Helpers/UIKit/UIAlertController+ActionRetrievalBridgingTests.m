@@ -4,9 +4,7 @@
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
 #import <OCHamcrest/OCHamcrest.h>
-
-#import "BTKUnitTestCase.h"
-#import "UIAlertController+ActionRetrieval.h"
+#import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIAlertController_ActionRetrievalBridgingTests : BTKUnitTestCase
 
@@ -18,14 +16,16 @@
 
 - (void)testFindActionIdentifiedByIsInvocableFromObjc
 {
-    UIAlertController *sut = [UIAlertController alertControllerWithTitle:@"title" message:@"message" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
-    action.accessibilityIdentifier = @"cancel";
-    [sut addAction:action];
+    BTKRunIfOSVersionAtLeast(14, "UIAlertAction gained accessibilityIdenfier in iOS 14",
+         UIAlertController *sut = [UIAlertController alertControllerWithTitle:@"title" message:@"message" preferredStyle:UIAlertControllerStyleAlert];
+         UIAlertAction *action = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
+         action.accessibilityIdentifier = @"cancel";
+         [sut addAction:action];
 
-    UIAlertAction *actualAction = [sut findActionIdentifiedBy:@"cancel"];
+         UIAlertAction *actualAction = [sut findActionIdentifiedBy:@"cancel"];
 
-    assertThat(actualAction, notNilValue());
+         assertThat(actualAction, notNilValue());
+    );
 }
 
 #else

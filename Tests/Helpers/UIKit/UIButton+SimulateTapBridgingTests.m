@@ -4,9 +4,7 @@
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
 #import <OCHamcrest/OCHamcrest.h>
-
-#import "BTKUnitTestCase.h"
-#import "UIButton+SimulateTap.h"
+#import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIButton_SimulateTapBridgingTests : BTKUnitTestCase
 

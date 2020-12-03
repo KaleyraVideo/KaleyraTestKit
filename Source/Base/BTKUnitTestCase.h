@@ -5,6 +5,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(UnitTestCase)
 @interface BTKUnitTestCase : XCTestCase
 @end
 

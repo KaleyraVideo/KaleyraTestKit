@@ -4,9 +4,7 @@
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
 #import <OCHamcrest/OCHamcrest.h>
-
-#import "BTKUnitTestCase.h"
-#import "UIControl+SimulateEvent.h"
+#import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIControl_SimulateEventBridgingTests : BTKUnitTestCase
 

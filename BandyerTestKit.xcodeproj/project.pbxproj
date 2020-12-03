@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */; };
+		8C058BA2BB1FE395C566A504 /* Pods_BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */; };
+		A5E5C2EFF6F0B0EE65336D83 /* Pods_BandyerTestKit_BandyerTestKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9071F48C0E307CB78D1D9105 /* Pods_BandyerTestKit_BandyerTestKitTests.framework */; };
+		A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F1825798B3B00E8530C /* XCTestCase+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */; };
 		A9045F1925798B3B00E8530C /* UIViewControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */; };
 		A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */; };
@@ -20,7 +22,7 @@
 		A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */; };
 		A9045F2225798B3B00E8530C /* UIView+Descendants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */; };
 		A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */; };
-		A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */; };
+		A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F2525798B3B00E8530C /* OperatingSystemVersion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEE25798B3A00E8530C /* OperatingSystemVersion+Extension.swift */; };
 		A9045F2625798B3B00E8530C /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */; };
 		A9045F2725798B3B00E8530C /* XCTestCase+Downcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */; };
@@ -35,24 +37,24 @@
 		A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */; };
 		A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */; };
 		A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */; };
-		A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EFF25798B3A00E8530C /* BTKThrowsException.h */; };
+		A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EFF25798B3A00E8530C /* BTKThrowsException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3425798B3B00E8530C /* BTKThreadAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0025798B3A00E8530C /* BTKThreadAssert.m */; };
 		A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */; };
-		A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0225798B3A00E8530C /* BTKThreadAssert.h */; };
+		A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0225798B3A00E8530C /* BTKThreadAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3725798B3B00E8530C /* BTKThrowsException.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0325798B3A00E8530C /* BTKThrowsException.m */; };
-		A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */; };
-		A9045F3925798B3B00E8530C /* BTKHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0525798B3A00E8530C /* BTKHamcrest.h */; };
-		A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */; };
+		A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F3925798B3B00E8530C /* BTKHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0525798B3A00E8530C /* BTKHamcrest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3B25798B3B00E8530C /* AnimationsDisabledTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */; };
 		A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */; };
-		A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */; };
-		A9045F3E25798B3B00E8530C /* BTKMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0B25798B3A00E8530C /* BTKMacro.h */; };
-		A9045F3F25798B3B00E8530C /* BTKiOS9AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */; };
-		A9045F4025798B3B00E8530C /* BTKiOS10AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */; };
-		A9045F4125798B3B00E8530C /* BTKiOS12AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */; };
-		A9045F4225798B3B00E8530C /* BTKiOS11AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */; };
-		A9045F4325798B3B00E8530C /* BTKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1025798B3A00E8530C /* BTKBase.h */; };
-		A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */; };
+		A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F3E25798B3B00E8530C /* BTKMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0B25798B3A00E8530C /* BTKMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F3F25798B3B00E8530C /* BTKiOS9AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F4025798B3B00E8530C /* BTKiOS10AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F4125798B3B00E8530C /* BTKiOS12AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F4225798B3B00E8530C /* BTKiOS11AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F4325798B3B00E8530C /* BTKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1025798B3A00E8530C /* BTKBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */; };
 		A9045F4625798B3B00E8530C /* BTKiOS13AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */; };
 		A9045F4725798B3B00E8530C /* BTKiOS12AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */; };
@@ -75,7 +77,6 @@
 		A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */; };
 		A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */; };
 		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
-		A9045F7C25798BBB00E8530C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
 		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -90,21 +91,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A9045F7D25798BBB00E8530C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A9045F7C25798BBB00E8530C /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		1F44564BF8A27865FF01BD0D /* Pods-BandyerTestKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit.debug.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit/Pods-BandyerTestKit.debug.xcconfig"; sourceTree = "<group>"; };
+		57D862BE1983974488922BEE /* Pods-BandyerTestKit-BandyerTestKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.debug.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE8DEA8F514E0A1FE5DFC26 /* Pods-BandyerTestKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit/Pods-BandyerTestKit.release.xcconfig"; sourceTree = "<group>"; };
+		9071F48C0E307CB78D1D9105 /* Pods_BandyerTestKit_BandyerTestKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit_BandyerTestKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSExceptionCatcher.h; sourceTree = "<group>"; };
 		A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Unwrap.swift"; sourceTree = "<group>"; };
 		A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerObserver.swift; sourceTree = "<group>"; };
@@ -178,6 +169,8 @@
 		A91AD43C25798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandyerTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD44825798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */,
+				8C058BA2BB1FE395C566A504 /* Pods_BandyerTestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,30 +188,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */,
+				A5E5C2EFF6F0B0EE65336D83 /* Pods_BandyerTestKit_BandyerTestKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096C6E15A22D643F861A107C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F44564BF8A27865FF01BD0D /* Pods-BandyerTestKit.debug.xcconfig */,
+				5AE8DEA8F514E0A1FE5DFC26 /* Pods-BandyerTestKit.release.xcconfig */,
+				57D862BE1983974488922BEE /* Pods-BandyerTestKit-BandyerTestKitTests.debug.xcconfig */,
+				EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9045EDD25798B3A00E8530C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */,
-				A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */,
-				A9045EE025798B3A00E8530C /* UIKit */,
+				A9045EF825798B3A00E8530C /* CompletionSpy.swift */,
 				A9045EED25798B3A00E8530C /* Foundation */,
-				A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */,
-				A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */,
-				A9045EF125798B3A00E8530C /* NSExceptionCatcher.m */,
+				A9045F9425798F1A00E8530C /* NSException */,
+				A9045EF725798B3A00E8530C /* SourceLocation.swift */,
 				A9045EF225798B3A00E8530C /* Stopwatch.swift */,
 				A9045EF325798B3A00E8530C /* TestHelpers.swift */,
-				A9045EF425798B3A00E8530C /* NSExceptionCatcher.swift */,
-				A9045EF525798B3A00E8530C /* XCTestCase+ConditionalTestCase.swift */,
-				A9045EF625798B3A00E8530C /* XCTestCase+Skip.swift */,
-				A9045EF725798B3A00E8530C /* SourceLocation.swift */,
-				A9045EF825798B3A00E8530C /* CompletionSpy.swift */,
-				A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */,
+				A9045EE025798B3A00E8530C /* UIKit */,
+				A9045F9325798F0400E8530C /* XCTestCase */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,18 +224,18 @@
 		A9045EE025798B3A00E8530C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */,
-				A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */,
-				A9045EE325798B3A00E8530C /* UITraitCollection+FactoryMethods.swift */,
-				A9045EE425798B3A00E8530C /* UIView+SimulatedGestures.swift */,
-				A9045EE525798B3A00E8530C /* UICollectionView+SimulateSelection.swift */,
-				A9045EE625798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.m */,
-				A9045EE725798B3A00E8530C /* UICollectionViewController+CellRetrieving.swift */,
-				A9045EE825798B3A00E8530C /* UIButton+SimulateTap.swift */,
-				A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */,
-				A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */,
-				A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */,
 				A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */,
+				A9045EE625798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.m */,
+				A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */,
+				A9045EE825798B3A00E8530C /* UIButton+SimulateTap.swift */,
+				A9045EE525798B3A00E8530C /* UICollectionView+SimulateSelection.swift */,
+				A9045EE725798B3A00E8530C /* UICollectionViewController+CellRetrieving.swift */,
+				A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */,
+				A9045EE325798B3A00E8530C /* UITraitCollection+FactoryMethods.swift */,
+				A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */,
+				A9045EE425798B3A00E8530C /* UIView+SimulatedGestures.swift */,
+				A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */,
+				A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -269,15 +268,15 @@
 		A9045EFD25798B3A00E8530C /* OCHamcrest */ = {
 			isa = PBXGroup;
 			children = (
-				A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */,
-				A9045EFF25798B3A00E8530C /* BTKThrowsException.h */,
-				A9045F0025798B3A00E8530C /* BTKThreadAssert.m */,
-				A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */,
-				A9045F0225798B3A00E8530C /* BTKThreadAssert.h */,
-				A9045F0325798B3A00E8530C /* BTKThrowsException.m */,
 				A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */,
+				A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */,
 				A9045F0525798B3A00E8530C /* BTKHamcrest.h */,
 				A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */,
+				A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */,
+				A9045F0225798B3A00E8530C /* BTKThreadAssert.h */,
+				A9045F0025798B3A00E8530C /* BTKThreadAssert.m */,
+				A9045EFF25798B3A00E8530C /* BTKThrowsException.h */,
+				A9045F0325798B3A00E8530C /* BTKThrowsException.m */,
 			);
 			path = OCHamcrest;
 			sourceTree = "<group>";
@@ -286,20 +285,20 @@
 			isa = PBXGroup;
 			children = (
 				A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */,
-				A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */,
-				A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */,
-				A9045F0B25798B3A00E8530C /* BTKMacro.h */,
-				A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */,
-				A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */,
-				A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */,
-				A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */,
 				A9045F1025798B3A00E8530C /* BTKBase.h */,
-				A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */,
+				A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */,
 				A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */,
-				A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */,
-				A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */,
+				A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */,
 				A9045F1525798B3A00E8530C /* BTKiOS10AndAboveTestCase.m */,
+				A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */,
 				A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */,
+				A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */,
+				A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */,
+				A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */,
+				A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */,
+				A9045F0B25798B3A00E8530C /* BTKMacro.h */,
+				A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */,
+				A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -362,8 +361,33 @@
 			isa = PBXGroup;
 			children = (
 				A9045F7A25798BBB00E8530C /* XCTest.framework */,
+				AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */,
+				9071F48C0E307CB78D1D9105 /* Pods_BandyerTestKit_BandyerTestKitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9045F9325798F0400E8530C /* XCTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EF525798B3A00E8530C /* XCTestCase+ConditionalTestCase.swift */,
+				A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */,
+				A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */,
+				A9045EF625798B3A00E8530C /* XCTestCase+Skip.swift */,
+				A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */,
+				A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */,
+			);
+			path = XCTestCase;
+			sourceTree = "<group>";
+		};
+		A9045F9425798F1A00E8530C /* NSException */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */,
+				A9045EF125798B3A00E8530C /* NSExceptionCatcher.m */,
+				A9045EF425798B3A00E8530C /* NSExceptionCatcher.swift */,
+			);
+			path = NSException;
 			sourceTree = "<group>";
 		};
 		A91AD42E25798452004088D1 = {
@@ -373,6 +397,7 @@
 				A91AD44525798452004088D1 /* Tests */,
 				A91AD43925798452004088D1 /* Products */,
 				A9045F7925798BBB00E8530C /* Frameworks */,
+				096C6E15A22D643F861A107C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -440,11 +465,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91AD44C25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKit" */;
 			buildPhases = (
+				E0D8D44FE2FCF350F79E7B21 /* [CP] Check Pods Manifest.lock */,
 				A91AD43325798452004088D1 /* Headers */,
 				A91AD43425798452004088D1 /* Sources */,
 				A91AD43525798452004088D1 /* Frameworks */,
 				A91AD43625798452004088D1 /* Resources */,
-				A9045F7D25798BBB00E8530C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,9 +484,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91AD44F25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKitTests" */;
 			buildPhases = (
+				CC2F205B40B9F2E776A13784 /* [CP] Check Pods Manifest.lock */,
 				A91AD43D25798452004088D1 /* Sources */,
 				A91AD43E25798452004088D1 /* Frameworks */,
 				A91AD43F25798452004088D1 /* Resources */,
+				9B0FA6C6293028C921CBF3DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -525,6 +552,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B0FA6C6293028C921CBF3DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2F205B40B9F2E776A13784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BandyerTestKit-BandyerTestKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D8D44FE2FCF350F79E7B21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BandyerTestKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A91AD43425798452004088D1 /* Sources */ = {
@@ -728,6 +819,7 @@
 		};
 		A91AD44D25798452004088D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F44564BF8A27865FF01BD0D /* Pods-BandyerTestKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -753,6 +845,7 @@
 		};
 		A91AD44E25798452004088D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE8DEA8F514E0A1FE5DFC26 /* Pods-BandyerTestKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -778,6 +871,7 @@
 		};
 		A91AD45025798452004088D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D862BE1983974488922BEE /* Pods-BandyerTestKit-BandyerTestKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -796,6 +890,7 @@
 		};
 		A91AD45125798452004088D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
