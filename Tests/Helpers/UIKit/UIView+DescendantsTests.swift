@@ -5,7 +5,7 @@ import XCTest
 import Hamcrest
 import BandyerTestKit
 
-class UIView_DescendantsTests: BTKUnitTestCase {
+class UIView_DescendantsTests: UnitTestCase {
     
     private let sut = UIView()
 

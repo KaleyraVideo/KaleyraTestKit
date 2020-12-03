@@ -5,7 +5,7 @@ import XCTest
 import Hamcrest
 @testable import BandyerTestKit
 
-class StopwatchTests: BTKUnitTestCase {
+class StopwatchTests: UnitTestCase {
 
     func testElapsedTimeReturnsNeverWhenStartTimeIsNil() {
         let sut = makeSUTStub(startTime: nil, endTime: DispatchTime.distantFuture)

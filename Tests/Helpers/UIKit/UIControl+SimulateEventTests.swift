@@ -6,7 +6,7 @@ import UIKit
 import Hamcrest
 import BandyerTestKit
 
-class UIControl_SimulateEventTests: BTKUnitTestCase {
+class UIControl_SimulateEventTests: UnitTestCase {
 
     func testSimulateEventCallsAllTargetsActionsBoundToTheEventInvokingTheSelectorsTakingNoArguments() {
         let button = UIButton(type: .system)

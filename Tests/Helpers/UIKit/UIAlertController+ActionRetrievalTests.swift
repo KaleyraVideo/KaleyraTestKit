@@ -6,7 +6,7 @@ import UIKit
 import Hamcrest
 import BandyerTestKit
 
-class UIAlertController_ActionRetrievalTests: BTKUnitTestCase, ConditionalTestCase {
+class UIAlertController_ActionRetrievalTests: UnitTestCase, ConditionalTestCase {
 
     #if swift(>=5.3)
 

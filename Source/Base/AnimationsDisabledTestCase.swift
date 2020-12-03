@@ -5,7 +5,7 @@ import XCTest
 import UIKit
 
 @objc(BTKAnimationsDisabledTestCase)
-open class AnimationsDisabledTestCase: BTKUnitTestCase {
+open class AnimationsDisabledTestCase: UnitTestCase {
     
     open override func setUp() {
         super.setUp()

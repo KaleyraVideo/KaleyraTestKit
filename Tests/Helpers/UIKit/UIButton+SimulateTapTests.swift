@@ -6,7 +6,7 @@ import UIKit
 import Hamcrest
 import BandyerTestKit
 
-class UIButton_SimulateTapTests: BTKUnitTestCase {
+class UIButton_SimulateTapTests: UnitTestCase {
 
     func testSimulateTapCallsTouchDownAndTouchUpInsideActions() {
         let button = UIButton(type: .system)

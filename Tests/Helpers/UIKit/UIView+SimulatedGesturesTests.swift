@@ -5,7 +5,7 @@ import XCTest
 import Hamcrest
 import BandyerTestKit
 
-class UIView_SimulatedGesturesTests: BTKUnitTestCase {
+class UIView_SimulatedGesturesTests: UnitTestCase {
 
     private let view = UIView()
     private let spy = GestureRecognizerActionInvocationSpy()

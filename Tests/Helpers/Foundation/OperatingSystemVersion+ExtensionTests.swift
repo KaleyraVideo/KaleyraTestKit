@@ -5,7 +5,7 @@ import XCTest
 import Hamcrest
 import BandyerTestKit
 
-class OperatingSystemVersion_ExtensionTests: BTKUnitTestCase {
+class OperatingSystemVersion_ExtensionTests: UnitTestCase {
 
     func testCreatesVersionFromInteger() {
         let sut = OperatingSystemVersion(11)

@@ -5,7 +5,7 @@ import XCTest
 import Hamcrest
 import BandyerTestKit
 
-class SourceLocationTests: BTKUnitTestCase {
+class SourceLocationTests: UnitTestCase {
 
     func testDescription() {
         let sut = SourceLocation(file: #file, line: #line)
