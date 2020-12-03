@@ -1,12 +1,11 @@
+// Copyright © 2020 Bandyer S.r.l. All rights reserved.
+// See LICENSE.txt for licensing information
 
 #import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
-//! Project version number for BandyerTestKit.
+#import <BandyerTestKit/BTKBase.h>
+#import <BandyerTestKit/BTKHamcrest.h>
+
 FOUNDATION_EXPORT double BandyerTestKitVersionNumber;
-
-//! Project version string for BandyerTestKit.
 FOUNDATION_EXPORT const unsigned char BandyerTestKitVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BandyerTestKit/PublicHeader.h>
-
-

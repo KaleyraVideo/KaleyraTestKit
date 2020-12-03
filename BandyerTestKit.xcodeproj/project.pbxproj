@@ -7,6 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */; };
+		A9045F1825798B3B00E8530C /* XCTestCase+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */; };
+		A9045F1925798B3B00E8530C /* UIViewControllerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */; };
+		A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */; };
+		A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE325798B3A00E8530C /* UITraitCollection+FactoryMethods.swift */; };
+		A9045F1C25798B3B00E8530C /* UIView+SimulatedGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE425798B3A00E8530C /* UIView+SimulatedGestures.swift */; };
+		A9045F1D25798B3B00E8530C /* UICollectionView+SimulateSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE525798B3A00E8530C /* UICollectionView+SimulateSelection.swift */; };
+		A9045F1E25798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE625798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.m */; };
+		A9045F1F25798B3B00E8530C /* UICollectionViewController+CellRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE725798B3A00E8530C /* UICollectionViewController+CellRetrieving.swift */; };
+		A9045F2025798B3B00E8530C /* UIButton+SimulateTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE825798B3A00E8530C /* UIButton+SimulateTap.swift */; };
+		A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */; };
+		A9045F2225798B3B00E8530C /* UIView+Descendants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */; };
+		A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */; };
+		A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */; };
+		A9045F2525798B3B00E8530C /* OperatingSystemVersion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEE25798B3A00E8530C /* OperatingSystemVersion+Extension.swift */; };
+		A9045F2625798B3B00E8530C /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */; };
+		A9045F2725798B3B00E8530C /* XCTestCase+Downcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */; };
+		A9045F2825798B3B00E8530C /* NSExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF125798B3A00E8530C /* NSExceptionCatcher.m */; };
+		A9045F2925798B3B00E8530C /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF225798B3A00E8530C /* Stopwatch.swift */; };
+		A9045F2A25798B3B00E8530C /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF325798B3A00E8530C /* TestHelpers.swift */; };
+		A9045F2B25798B3B00E8530C /* NSExceptionCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF425798B3A00E8530C /* NSExceptionCatcher.swift */; };
+		A9045F2C25798B3B00E8530C /* XCTestCase+ConditionalTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF525798B3A00E8530C /* XCTestCase+ConditionalTestCase.swift */; };
+		A9045F2D25798B3B00E8530C /* XCTestCase+Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF625798B3A00E8530C /* XCTestCase+Skip.swift */; };
+		A9045F2E25798B3B00E8530C /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF725798B3A00E8530C /* SourceLocation.swift */; };
+		A9045F2F25798B3B00E8530C /* CompletionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF825798B3A00E8530C /* CompletionSpy.swift */; };
+		A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */; };
+		A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */; };
+		A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */; };
+		A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EFF25798B3A00E8530C /* BTKThrowsException.h */; };
+		A9045F3425798B3B00E8530C /* BTKThreadAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0025798B3A00E8530C /* BTKThreadAssert.m */; };
+		A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */; };
+		A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0225798B3A00E8530C /* BTKThreadAssert.h */; };
+		A9045F3725798B3B00E8530C /* BTKThrowsException.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0325798B3A00E8530C /* BTKThrowsException.m */; };
+		A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */; };
+		A9045F3925798B3B00E8530C /* BTKHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0525798B3A00E8530C /* BTKHamcrest.h */; };
+		A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */; };
+		A9045F3B25798B3B00E8530C /* AnimationsDisabledTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */; };
+		A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */; };
+		A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */; };
+		A9045F3E25798B3B00E8530C /* BTKMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0B25798B3A00E8530C /* BTKMacro.h */; };
+		A9045F3F25798B3B00E8530C /* BTKiOS9AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */; };
+		A9045F4025798B3B00E8530C /* BTKiOS10AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */; };
+		A9045F4125798B3B00E8530C /* BTKiOS12AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */; };
+		A9045F4225798B3B00E8530C /* BTKiOS11AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */; };
+		A9045F4325798B3B00E8530C /* BTKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1025798B3A00E8530C /* BTKBase.h */; };
+		A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */; };
+		A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */; };
+		A9045F4625798B3B00E8530C /* BTKiOS13AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */; };
+		A9045F4725798B3B00E8530C /* BTKiOS12AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */; };
+		A9045F4825798B3B00E8530C /* BTKiOS10AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1525798B3A00E8530C /* BTKiOS10AndAboveTestCase.m */; };
+		A9045F4925798B3B00E8530C /* BTKiOS11AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */; };
+		A9045F6325798B6000E8530C /* UIView+SimulatedGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5025798B6000E8530C /* UIView+SimulatedGesturesTests.swift */; };
+		A9045F6425798B6000E8530C /* UIControl+SimulateEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5125798B6000E8530C /* UIControl+SimulateEventTests.swift */; };
+		A9045F6525798B6000E8530C /* UIView+DescendantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5225798B6000E8530C /* UIView+DescendantsTests.swift */; };
+		A9045F6625798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5325798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift */; };
+		A9045F6725798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5425798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m */; };
+		A9045F6825798B6000E8530C /* UIViewControllerObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5525798B6000E8530C /* UIViewControllerObserverTests.swift */; };
+		A9045F6925798B6000E8530C /* UIButton+SimulateTapBridgingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5625798B6000E8530C /* UIButton+SimulateTapBridgingTests.m */; };
+		A9045F6A25798B6000E8530C /* UIControl+SimulateEventBridgingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5725798B6000E8530C /* UIControl+SimulateEventBridgingTests.m */; };
+		A9045F6B25798B6000E8530C /* UIButton+SimulateTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5825798B6000E8530C /* UIButton+SimulateTapTests.swift */; };
+		A9045F6C25798B6000E8530C /* BTKStopwatchBridgingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5925798B6000E8530C /* BTKStopwatchBridgingTests.m */; };
+		A9045F6D25798B6000E8530C /* SourceLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5A25798B6000E8530C /* SourceLocationTests.swift */; };
+		A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */; };
+		A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5D25798B6000E8530C /* StopwatchTests.swift */; };
+		A9045F7025798B6000E8530C /* BTKThrowsExceptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */; };
+		A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */; };
+		A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */; };
+		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
+		A9045F7C25798BBB00E8530C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
 		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -21,7 +90,89 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A9045F7D25798BBB00E8530C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9045F7C25798BBB00E8530C /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSExceptionCatcher.h; sourceTree = "<group>"; };
+		A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Unwrap.swift"; sourceTree = "<group>"; };
+		A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerObserver.swift; sourceTree = "<group>"; };
+		A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ActionRetrieval.swift"; sourceTree = "<group>"; };
+		A9045EE325798B3A00E8530C /* UITraitCollection+FactoryMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+FactoryMethods.swift"; sourceTree = "<group>"; };
+		A9045EE425798B3A00E8530C /* UIView+SimulatedGestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SimulatedGestures.swift"; sourceTree = "<group>"; };
+		A9045EE525798B3A00E8530C /* UICollectionView+SimulateSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+SimulateSelection.swift"; sourceTree = "<group>"; };
+		A9045EE625798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKGestureRecognizerActionsInvoker.m; sourceTree = "<group>"; };
+		A9045EE725798B3A00E8530C /* UICollectionViewController+CellRetrieving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+CellRetrieving.swift"; sourceTree = "<group>"; };
+		A9045EE825798B3A00E8530C /* UIButton+SimulateTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SimulateTap.swift"; sourceTree = "<group>"; };
+		A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+SimulateEvent.swift"; sourceTree = "<group>"; };
+		A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Descendants.swift"; sourceTree = "<group>"; };
+		A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowAwareTestCase.swift; sourceTree = "<group>"; };
+		A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKGestureRecognizerActionsInvoker.h; sourceTree = "<group>"; };
+		A9045EEE25798B3A00E8530C /* OperatingSystemVersion+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+Extension.swift"; sourceTree = "<group>"; };
+		A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
+		A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Downcast.swift"; sourceTree = "<group>"; };
+		A9045EF125798B3A00E8530C /* NSExceptionCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSExceptionCatcher.m; sourceTree = "<group>"; };
+		A9045EF225798B3A00E8530C /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		A9045EF325798B3A00E8530C /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		A9045EF425798B3A00E8530C /* NSExceptionCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSExceptionCatcher.swift; sourceTree = "<group>"; };
+		A9045EF525798B3A00E8530C /* XCTestCase+ConditionalTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+ConditionalTestCase.swift"; sourceTree = "<group>"; };
+		A9045EF625798B3A00E8530C /* XCTestCase+Skip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Skip.swift"; sourceTree = "<group>"; };
+		A9045EF725798B3A00E8530C /* SourceLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
+		A9045EF825798B3A00E8530C /* CompletionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionSpy.swift; sourceTree = "<group>"; };
+		A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakAssertions.swift"; sourceTree = "<group>"; };
+		A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamcrestExtension.swift; sourceTree = "<group>"; };
+		A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKGeometryAssert.m; sourceTree = "<group>"; };
+		A9045EFF25798B3A00E8530C /* BTKThrowsException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKThrowsException.h; sourceTree = "<group>"; };
+		A9045F0025798B3A00E8530C /* BTKThreadAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThreadAssert.m; sourceTree = "<group>"; };
+		A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKIsEqualToGeometryValue.m; sourceTree = "<group>"; };
+		A9045F0225798B3A00E8530C /* BTKThreadAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKThreadAssert.h; sourceTree = "<group>"; };
+		A9045F0325798B3A00E8530C /* BTKThrowsException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThrowsException.m; sourceTree = "<group>"; };
+		A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKGeometryAssert.h; sourceTree = "<group>"; };
+		A9045F0525798B3A00E8530C /* BTKHamcrest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKHamcrest.h; sourceTree = "<group>"; };
+		A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKIsEqualToGeometryValue.h; sourceTree = "<group>"; };
+		A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsDisabledTestCase.swift; sourceTree = "<group>"; };
+		A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKUnitTestCase.m; sourceTree = "<group>"; };
+		A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS13AndAboveTestCase.h; sourceTree = "<group>"; };
+		A9045F0B25798B3A00E8530C /* BTKMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKMacro.h; sourceTree = "<group>"; };
+		A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS9AndBelowTestCase.h; sourceTree = "<group>"; };
+		A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndAboveTestCase.h; sourceTree = "<group>"; };
+		A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS12AndBelowTestCase.h; sourceTree = "<group>"; };
+		A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS11AndAboveTestCase.h; sourceTree = "<group>"; };
+		A9045F1025798B3A00E8530C /* BTKBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKBase.h; sourceTree = "<group>"; };
+		A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKUnitTestCase.h; sourceTree = "<group>"; };
+		A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS9AndBelowTestCase.m; sourceTree = "<group>"; };
+		A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS13AndAboveTestCase.m; sourceTree = "<group>"; };
+		A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS12AndBelowTestCase.m; sourceTree = "<group>"; };
+		A9045F1525798B3A00E8530C /* BTKiOS10AndAboveTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS10AndAboveTestCase.m; sourceTree = "<group>"; };
+		A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS11AndAboveTestCase.m; sourceTree = "<group>"; };
+		A9045F5025798B6000E8530C /* UIView+SimulatedGesturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SimulatedGesturesTests.swift"; sourceTree = "<group>"; };
+		A9045F5125798B6000E8530C /* UIControl+SimulateEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+SimulateEventTests.swift"; sourceTree = "<group>"; };
+		A9045F5225798B6000E8530C /* UIView+DescendantsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DescendantsTests.swift"; sourceTree = "<group>"; };
+		A9045F5325798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ActionRetrievalTests.swift"; sourceTree = "<group>"; };
+		A9045F5425798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ActionRetrievalBridgingTests.m"; sourceTree = "<group>"; };
+		A9045F5525798B6000E8530C /* UIViewControllerObserverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerObserverTests.swift; sourceTree = "<group>"; };
+		A9045F5625798B6000E8530C /* UIButton+SimulateTapBridgingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SimulateTapBridgingTests.m"; sourceTree = "<group>"; };
+		A9045F5725798B6000E8530C /* UIControl+SimulateEventBridgingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SimulateEventBridgingTests.m"; sourceTree = "<group>"; };
+		A9045F5825798B6000E8530C /* UIButton+SimulateTapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SimulateTapTests.swift"; sourceTree = "<group>"; };
+		A9045F5925798B6000E8530C /* BTKStopwatchBridgingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKStopwatchBridgingTests.m; sourceTree = "<group>"; };
+		A9045F5A25798B6000E8530C /* SourceLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceLocationTests.swift; sourceTree = "<group>"; };
+		A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+ExtensionTests.swift"; sourceTree = "<group>"; };
+		A9045F5D25798B6000E8530C /* StopwatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
+		A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThrowsExceptionTest.m; sourceTree = "<group>"; };
+		A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKIsEqualToGeometryValueTest.m; sourceTree = "<group>"; };
+		A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKGeometryAssertTest.m; sourceTree = "<group>"; };
+		A9045F7A25798BBB00E8530C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A91AD43825798452004088D1 /* BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD43B25798452004088D1 /* BandyerTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BandyerTestKit.h; sourceTree = "<group>"; };
 		A91AD43C25798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,12 +200,179 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9045EDD25798B3A00E8530C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */,
+				A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */,
+				A9045EE025798B3A00E8530C /* UIKit */,
+				A9045EED25798B3A00E8530C /* Foundation */,
+				A9045EEF25798B3A00E8530C /* XCTestCase+Wait.swift */,
+				A9045EF025798B3A00E8530C /* XCTestCase+Downcast.swift */,
+				A9045EF125798B3A00E8530C /* NSExceptionCatcher.m */,
+				A9045EF225798B3A00E8530C /* Stopwatch.swift */,
+				A9045EF325798B3A00E8530C /* TestHelpers.swift */,
+				A9045EF425798B3A00E8530C /* NSExceptionCatcher.swift */,
+				A9045EF525798B3A00E8530C /* XCTestCase+ConditionalTestCase.swift */,
+				A9045EF625798B3A00E8530C /* XCTestCase+Skip.swift */,
+				A9045EF725798B3A00E8530C /* SourceLocation.swift */,
+				A9045EF825798B3A00E8530C /* CompletionSpy.swift */,
+				A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A9045EE025798B3A00E8530C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EE125798B3A00E8530C /* UIViewControllerObserver.swift */,
+				A9045EE225798B3A00E8530C /* UIAlertController+ActionRetrieval.swift */,
+				A9045EE325798B3A00E8530C /* UITraitCollection+FactoryMethods.swift */,
+				A9045EE425798B3A00E8530C /* UIView+SimulatedGestures.swift */,
+				A9045EE525798B3A00E8530C /* UICollectionView+SimulateSelection.swift */,
+				A9045EE625798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.m */,
+				A9045EE725798B3A00E8530C /* UICollectionViewController+CellRetrieving.swift */,
+				A9045EE825798B3A00E8530C /* UIButton+SimulateTap.swift */,
+				A9045EE925798B3A00E8530C /* UIControl+SimulateEvent.swift */,
+				A9045EEA25798B3A00E8530C /* UIView+Descendants.swift */,
+				A9045EEB25798B3A00E8530C /* UIWindowAwareTestCase.swift */,
+				A9045EEC25798B3A00E8530C /* BTKGestureRecognizerActionsInvoker.h */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A9045EED25798B3A00E8530C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EEE25798B3A00E8530C /* OperatingSystemVersion+Extension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		A9045EFA25798B3A00E8530C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EFB25798B3A00E8530C /* SwiftHamcrest */,
+				A9045EFD25798B3A00E8530C /* OCHamcrest */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9045EFB25798B3A00E8530C /* SwiftHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */,
+			);
+			path = SwiftHamcrest;
+			sourceTree = "<group>";
+		};
+		A9045EFD25798B3A00E8530C /* OCHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */,
+				A9045EFF25798B3A00E8530C /* BTKThrowsException.h */,
+				A9045F0025798B3A00E8530C /* BTKThreadAssert.m */,
+				A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */,
+				A9045F0225798B3A00E8530C /* BTKThreadAssert.h */,
+				A9045F0325798B3A00E8530C /* BTKThrowsException.m */,
+				A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */,
+				A9045F0525798B3A00E8530C /* BTKHamcrest.h */,
+				A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */,
+			);
+			path = OCHamcrest;
+			sourceTree = "<group>";
+		};
+		A9045F0725798B3A00E8530C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */,
+				A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */,
+				A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */,
+				A9045F0B25798B3A00E8530C /* BTKMacro.h */,
+				A9045F0C25798B3A00E8530C /* BTKiOS9AndBelowTestCase.h */,
+				A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */,
+				A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */,
+				A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */,
+				A9045F1025798B3A00E8530C /* BTKBase.h */,
+				A9045F1125798B3A00E8530C /* BTKUnitTestCase.h */,
+				A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */,
+				A9045F1325798B3A00E8530C /* BTKiOS13AndAboveTestCase.m */,
+				A9045F1425798B3A00E8530C /* BTKiOS12AndBelowTestCase.m */,
+				A9045F1525798B3A00E8530C /* BTKiOS10AndAboveTestCase.m */,
+				A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A9045F4E25798B6000E8530C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F4F25798B6000E8530C /* UIKit */,
+				A9045F5925798B6000E8530C /* BTKStopwatchBridgingTests.m */,
+				A9045F5A25798B6000E8530C /* SourceLocationTests.swift */,
+				A9045F5B25798B6000E8530C /* Foundation */,
+				A9045F5D25798B6000E8530C /* StopwatchTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A9045F4F25798B6000E8530C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F5025798B6000E8530C /* UIView+SimulatedGesturesTests.swift */,
+				A9045F5125798B6000E8530C /* UIControl+SimulateEventTests.swift */,
+				A9045F5225798B6000E8530C /* UIView+DescendantsTests.swift */,
+				A9045F5325798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift */,
+				A9045F5425798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m */,
+				A9045F5525798B6000E8530C /* UIViewControllerObserverTests.swift */,
+				A9045F5625798B6000E8530C /* UIButton+SimulateTapBridgingTests.m */,
+				A9045F5725798B6000E8530C /* UIControl+SimulateEventBridgingTests.m */,
+				A9045F5825798B6000E8530C /* UIButton+SimulateTapTests.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A9045F5B25798B6000E8530C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		A9045F5E25798B6000E8530C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F5F25798B6000E8530C /* OCHamcrest */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9045F5F25798B6000E8530C /* OCHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */,
+				A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */,
+				A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */,
+			);
+			path = OCHamcrest;
+			sourceTree = "<group>";
+		};
+		A9045F7925798BBB00E8530C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9045F7A25798BBB00E8530C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A91AD42E25798452004088D1 = {
 			isa = PBXGroup;
 			children = (
 				A91AD43A25798452004088D1 /* Source */,
 				A91AD44525798452004088D1 /* Tests */,
 				A91AD43925798452004088D1 /* Products */,
+				A9045F7925798BBB00E8530C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +388,9 @@
 		A91AD43A25798452004088D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A9045F0725798B3A00E8530C /* Base */,
+				A9045EFA25798B3A00E8530C /* Extensions */,
+				A9045EDD25798B3A00E8530C /* Helpers */,
 				A91AD43B25798452004088D1 /* BandyerTestKit.h */,
 				A91AD43C25798452004088D1 /* Info.plist */,
 			);
@@ -78,6 +400,8 @@
 		A91AD44525798452004088D1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A9045F5E25798B6000E8530C /* Extensions */,
+				A9045F4E25798B6000E8530C /* Helpers */,
 				A91AD44825798452004088D1 /* Info.plist */,
 			);
 			path = Tests;
@@ -90,6 +414,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */,
+				A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */,
+				A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */,
+				A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */,
+				A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */,
+				A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */,
+				A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */,
+				A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */,
+				A9045F4125798B3B00E8530C /* BTKiOS12AndBelowTestCase.h in Headers */,
+				A9045F3F25798B3B00E8530C /* BTKiOS9AndBelowTestCase.h in Headers */,
+				A9045F3E25798B3B00E8530C /* BTKMacro.h in Headers */,
+				A9045F4325798B3B00E8530C /* BTKBase.h in Headers */,
+				A9045F4025798B3B00E8530C /* BTKiOS10AndAboveTestCase.h in Headers */,
+				A9045F3925798B3B00E8530C /* BTKHamcrest.h in Headers */,
+				A9045F4225798B3B00E8530C /* BTKiOS11AndAboveTestCase.h in Headers */,
 				A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +444,7 @@
 				A91AD43425798452004088D1 /* Sources */,
 				A91AD43525798452004088D1 /* Frameworks */,
 				A91AD43625798452004088D1 /* Resources */,
+				A9045F7D25798BBB00E8530C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +531,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9045F1C25798B3B00E8530C /* UIView+SimulatedGestures.swift in Sources */,
+				A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */,
+				A9045F2B25798B3B00E8530C /* NSExceptionCatcher.swift in Sources */,
+				A9045F1E25798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.m in Sources */,
+				A9045F4725798B3B00E8530C /* BTKiOS12AndBelowTestCase.m in Sources */,
+				A9045F1D25798B3B00E8530C /* UICollectionView+SimulateSelection.swift in Sources */,
+				A9045F4825798B3B00E8530C /* BTKiOS10AndAboveTestCase.m in Sources */,
+				A9045F3725798B3B00E8530C /* BTKThrowsException.m in Sources */,
+				A9045F1925798B3B00E8530C /* UIViewControllerObserver.swift in Sources */,
+				A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */,
+				A9045F2D25798B3B00E8530C /* XCTestCase+Skip.swift in Sources */,
+				A9045F2925798B3B00E8530C /* Stopwatch.swift in Sources */,
+				A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */,
+				A9045F2025798B3B00E8530C /* UIButton+SimulateTap.swift in Sources */,
+				A9045F1F25798B3B00E8530C /* UICollectionViewController+CellRetrieving.swift in Sources */,
+				A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */,
+				A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */,
+				A9045F2825798B3B00E8530C /* NSExceptionCatcher.m in Sources */,
+				A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */,
+				A9045F4925798B3B00E8530C /* BTKiOS11AndAboveTestCase.m in Sources */,
+				A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */,
+				A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */,
+				A9045F2725798B3B00E8530C /* XCTestCase+Downcast.swift in Sources */,
+				A9045F2E25798B3B00E8530C /* SourceLocation.swift in Sources */,
+				A9045F1825798B3B00E8530C /* XCTestCase+Unwrap.swift in Sources */,
+				A9045F2625798B3B00E8530C /* XCTestCase+Wait.swift in Sources */,
+				A9045F2525798B3B00E8530C /* OperatingSystemVersion+Extension.swift in Sources */,
+				A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */,
+				A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */,
+				A9045F4625798B3B00E8530C /* BTKiOS13AndAboveTestCase.m in Sources */,
+				A9045F2C25798B3B00E8530C /* XCTestCase+ConditionalTestCase.swift in Sources */,
+				A9045F3425798B3B00E8530C /* BTKThreadAssert.m in Sources */,
+				A9045F2225798B3B00E8530C /* UIView+Descendants.swift in Sources */,
+				A9045F2A25798B3B00E8530C /* TestHelpers.swift in Sources */,
+				A9045F3B25798B3B00E8530C /* AnimationsDisabledTestCase.swift in Sources */,
+				A9045F2F25798B3B00E8530C /* CompletionSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +574,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9045F6425798B6000E8530C /* UIControl+SimulateEventTests.swift in Sources */,
+				A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */,
+				A9045F6725798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m in Sources */,
+				A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */,
+				A9045F6B25798B6000E8530C /* UIButton+SimulateTapTests.swift in Sources */,
+				A9045F6A25798B6000E8530C /* UIControl+SimulateEventBridgingTests.m in Sources */,
+				A9045F6525798B6000E8530C /* UIView+DescendantsTests.swift in Sources */,
+				A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */,
+				A9045F6C25798B6000E8530C /* BTKStopwatchBridgingTests.m in Sources */,
+				A9045F6D25798B6000E8530C /* SourceLocationTests.swift in Sources */,
+				A9045F6325798B6000E8530C /* UIView+SimulatedGesturesTests.swift in Sources */,
+				A9045F6825798B6000E8530C /* UIViewControllerObserverTests.swift in Sources */,
+				A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */,
+				A9045F6925798B6000E8530C /* UIButton+SimulateTapBridgingTests.m in Sources */,
+				A9045F7025798B6000E8530C /* BTKThrowsExceptionTest.m in Sources */,
+				A9045F6625798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +714,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,16 +734,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BandyerTestKit/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,16 +759,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BandyerTestKit/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,8 +779,9 @@
 		A91AD45025798452004088D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BandyerTestKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,8 +797,9 @@
 		A91AD45125798452004088D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BandyerTestKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
