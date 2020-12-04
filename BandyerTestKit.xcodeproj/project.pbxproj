@@ -79,6 +79,8 @@
 		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
 		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
 		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */; };
+		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +171,8 @@
 		A91AD43C25798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandyerTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD44825798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS10AndBelowTestCase.m; sourceTree = "<group>"; };
+		A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndBelowTestCase.h; sourceTree = "<group>"; };
 		AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -290,6 +294,8 @@
 				A9045F1225798B3A00E8530C /* BTKiOS9AndBelowTestCase.m */,
 				A9045F0D25798B3A00E8530C /* BTKiOS10AndAboveTestCase.h */,
 				A9045F1525798B3A00E8530C /* BTKiOS10AndAboveTestCase.m */,
+				A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */,
+				A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */,
 				A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */,
 				A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */,
 				A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */,
@@ -443,6 +449,7 @@
 				A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */,
 				A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */,
 				A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */,
+				A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */,
 				A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */,
 				A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */,
 				A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */,
@@ -627,6 +634,7 @@
 				A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */,
 				A9045F2B25798B3B00E8530C /* NSExceptionCatcher.swift in Sources */,
 				A9045F1E25798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.m in Sources */,
+				A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */,
 				A9045F4725798B3B00E8530C /* BTKiOS12AndBelowTestCase.m in Sources */,
 				A9045F1D25798B3B00E8530C /* UICollectionView+SimulateSelection.swift in Sources */,
 				A9045F4825798B3B00E8530C /* BTKiOS10AndAboveTestCase.m in Sources */,
