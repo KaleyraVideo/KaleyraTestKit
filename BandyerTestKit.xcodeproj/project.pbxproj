@@ -83,6 +83,7 @@
 		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */; };
 		A9CFC77625C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */; };
+		A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndBelowTestCase.h; sourceTree = "<group>"; };
 		A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTKiOS12AndAboveTestCase.h; sourceTree = "<group>"; };
 		A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTKiOS12AndAboveTestCase.m; sourceTree = "<group>"; };
+		A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMatchers.swift; sourceTree = "<group>"; };
 		AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +270,7 @@
 		A9045EFB25798B3A00E8530C /* SwiftHamcrest */ = {
 			isa = PBXGroup;
 			children = (
+				A9CFC77B25C45AFB000C39D4 /* Matchers */,
 				A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */,
 			);
 			path = SwiftHamcrest;
@@ -442,6 +445,14 @@
 				A91AD44825798452004088D1 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		A9CFC77B25C45AFB000C39D4 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */,
+			);
+			path = Matchers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,6 +670,7 @@
 				A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */,
 				A9045F2825798B3B00E8530C /* NSExceptionCatcher.m in Sources */,
 				A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */,
+				A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */,
 				A9045F4925798B3B00E8530C /* BTKiOS11AndAboveTestCase.m in Sources */,
 				A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */,
 				A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */,
