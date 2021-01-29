@@ -85,6 +85,7 @@
 		A9CFC77625C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */; };
 		A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */; };
 		A9CFC78D25C464CB000C39D4 /* EnumMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC78C25C464CB000C39D4 /* EnumMatchers.swift */; };
+		A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC79025C4657C000C39D4 /* AnyNSError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,7 @@
 		A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTKiOS12AndAboveTestCase.m; sourceTree = "<group>"; };
 		A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMatchers.swift; sourceTree = "<group>"; };
 		A9CFC78C25C464CB000C39D4 /* EnumMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumMatchers.swift; sourceTree = "<group>"; };
+		A9CFC79025C4657C000C39D4 /* AnyNSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNSError.swift; sourceTree = "<group>"; };
 		AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				A9045EEE25798B3A00E8530C /* OperatingSystemVersion+Extension.swift */,
+				A9CFC79025C4657C000C39D4 /* AnyNSError.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				A9045F2925798B3B00E8530C /* Stopwatch.swift in Sources */,
 				A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */,
 				A9045F2025798B3B00E8530C /* UIButton+SimulateTap.swift in Sources */,
+				A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */,
 				A9045F1F25798B3B00E8530C /* UICollectionViewController+CellRetrieving.swift in Sources */,
 				A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */,
 				A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */,
