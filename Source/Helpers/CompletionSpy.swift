@@ -34,6 +34,7 @@ public extension CompletionSpy where T == Void {
     
     func callable() -> Void {
         state = .called
+        invocations.append(())
     }
 }
 
