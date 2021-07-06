@@ -1,8 +1,6 @@
 // Copyright © 2021 Bandyer S.r.l. All rights reserved.
 // See LICENSE.txt for licensing information
 
-#if canImport(Hamcrest)
-
 import Foundation
 import Hamcrest
 
@@ -43,5 +41,3 @@ public func isFailure<T>(withError matcher: Matcher<Any>) -> Matcher<Result<T, E
         }
     }
 }
-
-#endif
