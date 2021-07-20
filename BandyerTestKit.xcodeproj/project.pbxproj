@@ -110,6 +110,8 @@
 		A93AEDDC26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */; };
 		A93AEDE326A70CF300D8DA3F /* String+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDE226A70CF300D8DA3F /* String+StaticString.swift */; };
 		A93AEDE526A70D5100D8DA3F /* SnapshotHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */; };
+		A93AEE1A26A72FA100D8DA3F /* Screen_Scale+UIScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEE1926A72FA100D8DA3F /* Screen_Scale+UIScreenTests.swift */; };
+		A93AEE1C26A7307700D8DA3F /* Screen+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEE1B26A7307700D8DA3F /* Screen+UIScreen.swift */; };
 		A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */; };
 		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -238,6 +240,8 @@
 		A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCaseRunStrategy.swift; sourceTree = "<group>"; };
 		A93AEDE226A70CF300D8DA3F /* String+StaticString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StaticString.swift"; sourceTree = "<group>"; };
 		A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHost.swift; sourceTree = "<group>"; };
+		A93AEE1926A72FA100D8DA3F /* Screen_Scale+UIScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen_Scale+UIScreenTests.swift"; sourceTree = "<group>"; };
+		A93AEE1B26A7307700D8DA3F /* Screen+UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+UIScreen.swift"; sourceTree = "<group>"; };
 		A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS10AndBelowTestCase.m; sourceTree = "<group>"; };
 		A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndBelowTestCase.h; sourceTree = "<group>"; };
 		A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTKiOS12AndAboveTestCase.h; sourceTree = "<group>"; };
@@ -522,6 +526,7 @@
 				A93AEDDE26A70B9F00D8DA3F /* Configuration */,
 				A93AEDDD26A70B9300D8DA3F /* Device */,
 				A93AEDDA26A70A4700D8DA3F /* Errors */,
+				A93AEE1526A72F0C00D8DA3F /* Screen */,
 				A93AEDB326A7098100D8DA3F /* SnapshotTestCase.swift */,
 				A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */,
 				A93AEDE126A70CDF00D8DA3F /* Utils */,
@@ -534,6 +539,7 @@
 			children = (
 				A93AEDE026A70BE800D8DA3F /* Configuration */,
 				A93AEDDF26A70BD200D8DA3F /* Device */,
+				A93AEE1626A72F1F00D8DA3F /* Screen */,
 			);
 			path = Snapshot;
 			sourceTree = "<group>";
@@ -558,8 +564,6 @@
 				A93AEDA626A7096B00D8DA3F /* Device+ScreenSize.swift */,
 				A93AEDA726A7096B00D8DA3F /* Device+SizeClasses.swift */,
 				A93AEDA826A7096B00D8DA3F /* DeviceFamily+Idiom.swift */,
-				A93AEDB226A7098100D8DA3F /* Screen.swift */,
-				A93AEDB826A7098100D8DA3F /* Screen+UITraitCollection.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -607,6 +611,24 @@
 				A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A93AEE1526A72F0C00D8DA3F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDB226A7098100D8DA3F /* Screen.swift */,
+				A93AEDB826A7098100D8DA3F /* Screen+UITraitCollection.swift */,
+				A93AEE1B26A7307700D8DA3F /* Screen+UIScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		A93AEE1626A72F1F00D8DA3F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEE1926A72FA100D8DA3F /* Screen_Scale+UIScreenTests.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		A9CFC77B25C45AFB000C39D4 /* Matchers */ = {
@@ -817,6 +839,7 @@
 				A9CFC78D25C464CB000C39D4 /* EnumMatchers.swift in Sources */,
 				A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */,
 				A9045F2B25798B3B00E8530C /* NSExceptionCatcher.swift in Sources */,
+				A93AEE1C26A7307700D8DA3F /* Screen+UIScreen.swift in Sources */,
 				A93AEDAB26A7096B00D8DA3F /* Device+ScreenSize.swift in Sources */,
 				A9045F1E25798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.m in Sources */,
 				A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */,
@@ -888,6 +911,7 @@
 				A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */,
 				A9045F6B25798B6000E8530C /* UIButton+SimulateTapTests.swift in Sources */,
 				A9045F6A25798B6000E8530C /* UIControl+SimulateEventBridgingTests.m in Sources */,
+				A93AEE1A26A72FA100D8DA3F /* Screen_Scale+UIScreenTests.swift in Sources */,
 				A9045F6525798B6000E8530C /* UIView+DescendantsTests.swift in Sources */,
 				A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */,
 				A9045F6C25798B6000E8530C /* BTKStopwatchBridgingTests.m in Sources */,
