@@ -79,6 +79,37 @@
 		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
 		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
 		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A93AEDA326A7094A00D8DA3F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA226A7094A00D8DA3F /* Device.swift */; };
+		A93AEDA526A7095900D8DA3F /* Array+DeviceFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA426A7095900D8DA3F /* Array+DeviceFilters.swift */; };
+		A93AEDAB26A7096B00D8DA3F /* Device+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA626A7096B00D8DA3F /* Device+ScreenSize.swift */; };
+		A93AEDAC26A7096B00D8DA3F /* Device+SizeClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA726A7096B00D8DA3F /* Device+SizeClasses.swift */; };
+		A93AEDAD26A7096B00D8DA3F /* DeviceFamily+Idiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA826A7096B00D8DA3F /* DeviceFamily+Idiom.swift */; };
+		A93AEDAE26A7096B00D8DA3F /* Device+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDA926A7096B00D8DA3F /* Device+SafeArea.swift */; };
+		A93AEDAF26A7096B00D8DA3F /* Device+MultitaskingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDAA26A7096B00D8DA3F /* Device+MultitaskingMode.swift */; };
+		A93AEDB926A7098200D8DA3F /* SnapshotTolerance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB026A7098100D8DA3F /* SnapshotTolerance.swift */; };
+		A93AEDBA26A7098200D8DA3F /* UnsupportedSnapshotConfigurationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB126A7098100D8DA3F /* UnsupportedSnapshotConfigurationError.swift */; };
+		A93AEDBB26A7098200D8DA3F /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB226A7098100D8DA3F /* Screen.swift */; };
+		A93AEDBC26A7098200D8DA3F /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB326A7098100D8DA3F /* SnapshotTestCase.swift */; };
+		A93AEDBD26A7098200D8DA3F /* SnapshotVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB426A7098100D8DA3F /* SnapshotVariant.swift */; };
+		A93AEDBE26A7098200D8DA3F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB526A7098100D8DA3F /* Version.swift */; };
+		A93AEDBF26A7098200D8DA3F /* NotAvailableMultitaskingModeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB626A7098100D8DA3F /* NotAvailableMultitaskingModeError.swift */; };
+		A93AEDC026A7098200D8DA3F /* SnapshotConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB726A7098100D8DA3F /* SnapshotConfiguration.swift */; };
+		A93AEDC126A7098200D8DA3F /* Screen+UITraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDB826A7098100D8DA3F /* Screen+UITraitCollection.swift */; };
+		A93AEDC326A7099600D8DA3F /* CGSize+Widths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC226A7099600D8DA3F /* CGSize+Widths.swift */; };
+		A93AEDCF26A709B100D8DA3F /* Device_ScreenScaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC426A709B100D8DA3F /* Device_ScreenScaleTests.swift */; };
+		A93AEDD026A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC526A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift */; };
+		A93AEDD126A709B100D8DA3F /* SnapshotVariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC626A709B100D8DA3F /* SnapshotVariantTests.swift */; };
+		A93AEDD226A709B100D8DA3F /* Device_SafeAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC726A709B100D8DA3F /* Device_SafeAreaTests.swift */; };
+		A93AEDD326A709B100D8DA3F /* VersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC826A709B100D8DA3F /* VersionTests.swift */; };
+		A93AEDD426A709B100D8DA3F /* Device_FamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDC926A709B100D8DA3F /* Device_FamilyTests.swift */; };
+		A93AEDD526A709B100D8DA3F /* Device_ScreenSizesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDCA26A709B100D8DA3F /* Device_ScreenSizesTests.swift */; };
+		A93AEDD626A709B100D8DA3F /* Device_MultitaskingModesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDCB26A709B100D8DA3F /* Device_MultitaskingModesTests.swift */; };
+		A93AEDD726A709B100D8DA3F /* DeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDCC26A709B100D8DA3F /* DeviceTests.swift */; };
+		A93AEDD826A709B100D8DA3F /* SnapshotToleranceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDCD26A709B100D8DA3F /* SnapshotToleranceTests.swift */; };
+		A93AEDD926A709B100D8DA3F /* Device_SizeClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDCE26A709B100D8DA3F /* Device_SizeClassesTests.swift */; };
+		A93AEDDC26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */; };
+		A93AEDE326A70CF300D8DA3F /* String+StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDE226A70CF300D8DA3F /* String+StaticString.swift */; };
+		A93AEDE526A70D5100D8DA3F /* SnapshotHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */; };
 		A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */; };
 		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -176,6 +207,37 @@
 		A91AD43C25798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandyerTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD44825798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93AEDA226A7094A00D8DA3F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A93AEDA426A7095900D8DA3F /* Array+DeviceFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+DeviceFilters.swift"; sourceTree = "<group>"; };
+		A93AEDA626A7096B00D8DA3F /* Device+ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+ScreenSize.swift"; sourceTree = "<group>"; };
+		A93AEDA726A7096B00D8DA3F /* Device+SizeClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+SizeClasses.swift"; sourceTree = "<group>"; };
+		A93AEDA826A7096B00D8DA3F /* DeviceFamily+Idiom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceFamily+Idiom.swift"; sourceTree = "<group>"; };
+		A93AEDA926A7096B00D8DA3F /* Device+SafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+SafeArea.swift"; sourceTree = "<group>"; };
+		A93AEDAA26A7096B00D8DA3F /* Device+MultitaskingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+MultitaskingMode.swift"; sourceTree = "<group>"; };
+		A93AEDB026A7098100D8DA3F /* SnapshotTolerance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTolerance.swift; sourceTree = "<group>"; };
+		A93AEDB126A7098100D8DA3F /* UnsupportedSnapshotConfigurationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsupportedSnapshotConfigurationError.swift; sourceTree = "<group>"; };
+		A93AEDB226A7098100D8DA3F /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A93AEDB326A7098100D8DA3F /* SnapshotTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
+		A93AEDB426A7098100D8DA3F /* SnapshotVariant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotVariant.swift; sourceTree = "<group>"; };
+		A93AEDB526A7098100D8DA3F /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		A93AEDB626A7098100D8DA3F /* NotAvailableMultitaskingModeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotAvailableMultitaskingModeError.swift; sourceTree = "<group>"; };
+		A93AEDB726A7098100D8DA3F /* SnapshotConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotConfiguration.swift; sourceTree = "<group>"; };
+		A93AEDB826A7098100D8DA3F /* Screen+UITraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Screen+UITraitCollection.swift"; sourceTree = "<group>"; };
+		A93AEDC226A7099600D8DA3F /* CGSize+Widths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Widths.swift"; sourceTree = "<group>"; };
+		A93AEDC426A709B100D8DA3F /* Device_ScreenScaleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_ScreenScaleTests.swift; sourceTree = "<group>"; };
+		A93AEDC526A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_SupportedOperatingSystemsTests.swift; sourceTree = "<group>"; };
+		A93AEDC626A709B100D8DA3F /* SnapshotVariantTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotVariantTests.swift; sourceTree = "<group>"; };
+		A93AEDC726A709B100D8DA3F /* Device_SafeAreaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_SafeAreaTests.swift; sourceTree = "<group>"; };
+		A93AEDC826A709B100D8DA3F /* VersionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTests.swift; sourceTree = "<group>"; };
+		A93AEDC926A709B100D8DA3F /* Device_FamilyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_FamilyTests.swift; sourceTree = "<group>"; };
+		A93AEDCA26A709B100D8DA3F /* Device_ScreenSizesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_ScreenSizesTests.swift; sourceTree = "<group>"; };
+		A93AEDCB26A709B100D8DA3F /* Device_MultitaskingModesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_MultitaskingModesTests.swift; sourceTree = "<group>"; };
+		A93AEDCC26A709B100D8DA3F /* DeviceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTests.swift; sourceTree = "<group>"; };
+		A93AEDCD26A709B100D8DA3F /* SnapshotToleranceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotToleranceTests.swift; sourceTree = "<group>"; };
+		A93AEDCE26A709B100D8DA3F /* Device_SizeClassesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device_SizeClassesTests.swift; sourceTree = "<group>"; };
+		A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCaseRunStrategy.swift; sourceTree = "<group>"; };
+		A93AEDE226A70CF300D8DA3F /* String+StaticString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StaticString.swift"; sourceTree = "<group>"; };
+		A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHost.swift; sourceTree = "<group>"; };
 		A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS10AndBelowTestCase.m; sourceTree = "<group>"; };
 		A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndBelowTestCase.h; sourceTree = "<group>"; };
 		A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTKiOS12AndAboveTestCase.h; sourceTree = "<group>"; };
@@ -433,11 +495,12 @@
 		A91AD43A25798452004088D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A91AD43B25798452004088D1 /* BandyerTestKit.h */,
 				A9045F0725798B3A00E8530C /* Base */,
 				A9045EFA25798B3A00E8530C /* Extensions */,
 				A9045EDD25798B3A00E8530C /* Helpers */,
-				A91AD43B25798452004088D1 /* BandyerTestKit.h */,
 				A91AD43C25798452004088D1 /* Info.plist */,
+				A93AEDA026A7090F00D8DA3F /* Snapshot */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -448,8 +511,102 @@
 				A9045F5E25798B6000E8530C /* Extensions */,
 				A9045F4E25798B6000E8530C /* Helpers */,
 				A91AD44825798452004088D1 /* Info.plist */,
+				A93AEDA126A7092100D8DA3F /* Snapshot */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		A93AEDA026A7090F00D8DA3F /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDDE26A70B9F00D8DA3F /* Configuration */,
+				A93AEDDD26A70B9300D8DA3F /* Device */,
+				A93AEDDA26A70A4700D8DA3F /* Errors */,
+				A93AEDB326A7098100D8DA3F /* SnapshotTestCase.swift */,
+				A93AEDDB26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift */,
+				A93AEDE126A70CDF00D8DA3F /* Utils */,
+			);
+			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		A93AEDA126A7092100D8DA3F /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDE026A70BE800D8DA3F /* Configuration */,
+				A93AEDDF26A70BD200D8DA3F /* Device */,
+			);
+			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		A93AEDDA26A70A4700D8DA3F /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDB626A7098100D8DA3F /* NotAvailableMultitaskingModeError.swift */,
+				A93AEDB126A7098100D8DA3F /* UnsupportedSnapshotConfigurationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		A93AEDDD26A70B9300D8DA3F /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDA426A7095900D8DA3F /* Array+DeviceFilters.swift */,
+				A93AEDC226A7099600D8DA3F /* CGSize+Widths.swift */,
+				A93AEDA226A7094A00D8DA3F /* Device.swift */,
+				A93AEDAA26A7096B00D8DA3F /* Device+MultitaskingMode.swift */,
+				A93AEDA926A7096B00D8DA3F /* Device+SafeArea.swift */,
+				A93AEDA626A7096B00D8DA3F /* Device+ScreenSize.swift */,
+				A93AEDA726A7096B00D8DA3F /* Device+SizeClasses.swift */,
+				A93AEDA826A7096B00D8DA3F /* DeviceFamily+Idiom.swift */,
+				A93AEDB226A7098100D8DA3F /* Screen.swift */,
+				A93AEDB826A7098100D8DA3F /* Screen+UITraitCollection.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		A93AEDDE26A70B9F00D8DA3F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDB726A7098100D8DA3F /* SnapshotConfiguration.swift */,
+				A93AEDB026A7098100D8DA3F /* SnapshotTolerance.swift */,
+				A93AEDB426A7098100D8DA3F /* SnapshotVariant.swift */,
+				A93AEDB526A7098100D8DA3F /* Version.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A93AEDDF26A70BD200D8DA3F /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDC926A709B100D8DA3F /* Device_FamilyTests.swift */,
+				A93AEDCB26A709B100D8DA3F /* Device_MultitaskingModesTests.swift */,
+				A93AEDC726A709B100D8DA3F /* Device_SafeAreaTests.swift */,
+				A93AEDC426A709B100D8DA3F /* Device_ScreenScaleTests.swift */,
+				A93AEDCA26A709B100D8DA3F /* Device_ScreenSizesTests.swift */,
+				A93AEDCE26A709B100D8DA3F /* Device_SizeClassesTests.swift */,
+				A93AEDC526A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift */,
+				A93AEDCC26A709B100D8DA3F /* DeviceTests.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		A93AEDE026A70BE800D8DA3F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDCD26A709B100D8DA3F /* SnapshotToleranceTests.swift */,
+				A93AEDC626A709B100D8DA3F /* SnapshotVariantTests.swift */,
+				A93AEDC826A709B100D8DA3F /* VersionTests.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A93AEDE126A70CDF00D8DA3F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A93AEDE226A70CF300D8DA3F /* String+StaticString.swift */,
+				A93AEDE426A70D5100D8DA3F /* SnapshotHost.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A9CFC77B25C45AFB000C39D4 /* Matchers */ = {
@@ -655,46 +812,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93AEDAD26A7096B00D8DA3F /* DeviceFamily+Idiom.swift in Sources */,
 				A9045F1C25798B3B00E8530C /* UIView+SimulatedGestures.swift in Sources */,
 				A9CFC78D25C464CB000C39D4 /* EnumMatchers.swift in Sources */,
 				A9045F4525798B3B00E8530C /* BTKiOS9AndBelowTestCase.m in Sources */,
 				A9045F2B25798B3B00E8530C /* NSExceptionCatcher.swift in Sources */,
+				A93AEDAB26A7096B00D8DA3F /* Device+ScreenSize.swift in Sources */,
 				A9045F1E25798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.m in Sources */,
 				A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */,
+				A93AEDE526A70D5100D8DA3F /* SnapshotHost.swift in Sources */,
 				A9045F4725798B3B00E8530C /* BTKiOS12AndBelowTestCase.m in Sources */,
 				A9CFC77625C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m in Sources */,
 				A9045F1D25798B3B00E8530C /* UICollectionView+SimulateSelection.swift in Sources */,
 				A9045F4825798B3B00E8530C /* BTKiOS10AndAboveTestCase.m in Sources */,
 				A9045F3725798B3B00E8530C /* BTKThrowsException.m in Sources */,
+				A93AEDE326A70CF300D8DA3F /* String+StaticString.swift in Sources */,
+				A93AEDBF26A7098200D8DA3F /* NotAvailableMultitaskingModeError.swift in Sources */,
 				A9045F1925798B3B00E8530C /* UIViewControllerObserver.swift in Sources */,
+				A93AEDBB26A7098200D8DA3F /* Screen.swift in Sources */,
 				A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */,
 				A9045F2D25798B3B00E8530C /* XCTestCase+Skip.swift in Sources */,
 				A9045F2925798B3B00E8530C /* Stopwatch.swift in Sources */,
 				A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */,
 				A9045F2025798B3B00E8530C /* UIButton+SimulateTap.swift in Sources */,
+				A93AEDA526A7095900D8DA3F /* Array+DeviceFilters.swift in Sources */,
+				A93AEDAF26A7096B00D8DA3F /* Device+MultitaskingMode.swift in Sources */,
 				A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */,
 				A9045F1F25798B3B00E8530C /* UICollectionViewController+CellRetrieving.swift in Sources */,
 				A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */,
 				A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */,
 				A9045F2825798B3B00E8530C /* NSExceptionCatcher.m in Sources */,
 				A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */,
+				A93AEDBE26A7098200D8DA3F /* Version.swift in Sources */,
 				A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */,
+				A93AEDC126A7098200D8DA3F /* Screen+UITraitCollection.swift in Sources */,
 				A9045F4925798B3B00E8530C /* BTKiOS11AndAboveTestCase.m in Sources */,
+				A93AEDAE26A7096B00D8DA3F /* Device+SafeArea.swift in Sources */,
 				A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */,
+				A93AEDAC26A7096B00D8DA3F /* Device+SizeClasses.swift in Sources */,
 				A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */,
+				A93AEDDC26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift in Sources */,
+				A93AEDBA26A7098200D8DA3F /* UnsupportedSnapshotConfigurationError.swift in Sources */,
 				A9045F2725798B3B00E8530C /* XCTestCase+Downcast.swift in Sources */,
+				A93AEDBD26A7098200D8DA3F /* SnapshotVariant.swift in Sources */,
 				A9045F2E25798B3B00E8530C /* SourceLocation.swift in Sources */,
 				A9045F1825798B3B00E8530C /* XCTestCase+Unwrap.swift in Sources */,
 				A9045F2625798B3B00E8530C /* XCTestCase+Wait.swift in Sources */,
 				A9045F2525798B3B00E8530C /* OperatingSystemVersion+Extension.swift in Sources */,
 				A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */,
+				A93AEDA326A7094A00D8DA3F /* Device.swift in Sources */,
 				A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */,
+				A93AEDC326A7099600D8DA3F /* CGSize+Widths.swift in Sources */,
+				A93AEDB926A7098200D8DA3F /* SnapshotTolerance.swift in Sources */,
 				A9045F4625798B3B00E8530C /* BTKiOS13AndAboveTestCase.m in Sources */,
 				A9045F2C25798B3B00E8530C /* XCTestCase+ConditionalTestCase.swift in Sources */,
 				A9045F3425798B3B00E8530C /* BTKThreadAssert.m in Sources */,
 				A9045F2225798B3B00E8530C /* UIView+Descendants.swift in Sources */,
 				A9045F2A25798B3B00E8530C /* TestHelpers.swift in Sources */,
+				A93AEDBC26A7098200D8DA3F /* SnapshotTestCase.swift in Sources */,
 				A9045F3B25798B3B00E8530C /* AnimationsDisabledTestCase.swift in Sources */,
+				A93AEDC026A7098200D8DA3F /* SnapshotConfiguration.swift in Sources */,
 				A9045F2F25798B3B00E8530C /* CompletionSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,19 +881,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9045F6425798B6000E8530C /* UIControl+SimulateEventTests.swift in Sources */,
+				A93AEDD426A709B100D8DA3F /* Device_FamilyTests.swift in Sources */,
 				A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */,
 				A9045F6725798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m in Sources */,
+				A93AEDD626A709B100D8DA3F /* Device_MultitaskingModesTests.swift in Sources */,
 				A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */,
 				A9045F6B25798B6000E8530C /* UIButton+SimulateTapTests.swift in Sources */,
 				A9045F6A25798B6000E8530C /* UIControl+SimulateEventBridgingTests.m in Sources */,
 				A9045F6525798B6000E8530C /* UIView+DescendantsTests.swift in Sources */,
 				A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */,
 				A9045F6C25798B6000E8530C /* BTKStopwatchBridgingTests.m in Sources */,
+				A93AEDD726A709B100D8DA3F /* DeviceTests.swift in Sources */,
 				A9045F6D25798B6000E8530C /* SourceLocationTests.swift in Sources */,
+				A93AEDD826A709B100D8DA3F /* SnapshotToleranceTests.swift in Sources */,
+				A93AEDD126A709B100D8DA3F /* SnapshotVariantTests.swift in Sources */,
+				A93AEDD326A709B100D8DA3F /* VersionTests.swift in Sources */,
+				A93AEDD226A709B100D8DA3F /* Device_SafeAreaTests.swift in Sources */,
+				A93AEDCF26A709B100D8DA3F /* Device_ScreenScaleTests.swift in Sources */,
+				A93AEDD026A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift in Sources */,
 				A9045F6325798B6000E8530C /* UIView+SimulatedGesturesTests.swift in Sources */,
 				A9045F6825798B6000E8530C /* UIViewControllerObserverTests.swift in Sources */,
 				A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */,
 				A9045F6925798B6000E8530C /* UIButton+SimulateTapBridgingTests.m in Sources */,
+				A93AEDD526A709B100D8DA3F /* Device_ScreenSizesTests.swift in Sources */,
+				A93AEDD926A709B100D8DA3F /* Device_SizeClassesTests.swift in Sources */,
 				A9045F7025798B6000E8530C /* BTKThrowsExceptionTest.m in Sources */,
 				A9045F6625798B6000E8530C /* UIAlertController+ActionRetrievalTests.swift in Sources */,
 			);
@@ -785,7 +973,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -843,7 +1031,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
