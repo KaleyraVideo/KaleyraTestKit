@@ -67,8 +67,15 @@ open class SnapshotTestCase: FBSnapshotTestCase {
         }
     }
 
-    public func verifySnapshot(_ viewController: UIViewController, devices: [Device], variants: SnapshotVariant.Builder, compatibleWith uidevice: UIDevice = .current, tolerance: SnapshotTolerance = .zero, identifier: String? = nil, file: StaticString = #filePath, line: UInt = #line) {
-        let compatibleDevices = devices.compatible(with: uidevice).uniqueByScreenSize()
+    public func verifySnapshot(_ viewController: UIViewController, devices: [Device], variants: SnapshotVariant.Builder, compatibleWithUIDevice uidevice: UIDevice = .current, compatibleWithUIScreen screen: UIScreen = .main, tolerance: SnapshotTolerance = .zero, identifier: String? = nil, file: StaticString = #filePath, line: UInt = #line) {
+        guard let scale = Screen.Scale(screen) else {
+            record(XCTIssue(type: .assertionFailure, compactDescription: "Unsupported screen scale"))
+            return
+        }
+        let compatibleDevices = devices
+            .compatible(with: uidevice)
+            .compatible(with: scale)
+            .uniqueByScreenSize()
         guard !compatibleDevices.isEmpty else {
             record(XCTIssue(type: .assertionFailure, compactDescription: "Could not find compatible devices to run the tests against"))
             return
@@ -78,6 +85,6 @@ open class SnapshotTestCase: FBSnapshotTestCase {
 
     public  func verifySnapshot(_ viewController: UIViewController, runStrategy: SnapshotTestCaseRunStrategy = .auto, variants: SnapshotVariant.Builder = .default, tolerance: SnapshotTolerance = .zero, identifier: String? = nil, file: StaticString = #filePath, line: UInt = #line) {
         let devices = runStrategy.devices
-        verifySnapshot(viewController, devices: devices, variants: variants, compatibleWith: .current, tolerance: tolerance, identifier: identifier, file: file, line: line)
+        verifySnapshot(viewController, devices: devices, variants: variants, compatibleWithUIDevice: .current, compatibleWithUIScreen: .main, tolerance: tolerance, identifier: identifier, file: file, line: line)
     }
 }
