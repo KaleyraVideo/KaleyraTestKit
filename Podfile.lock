@@ -1,20 +1,28 @@
 PODS:
-  - OCHamcrest (7.1.2)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
+  - OCHamcrest (8.0.0)
   - SwiftHamcrest (2.2.1)
 
 DEPENDENCIES:
-  - OCHamcrest (~> 7.1)
+  - iOSSnapshotTestCase (~> 6.2)
+  - OCHamcrest (~> 8.0)
   - SwiftHamcrest (~> 2.2)
 
 SPEC REPOS:
   trunk:
+    - iOSSnapshotTestCase
     - OCHamcrest
     - SwiftHamcrest
 
 SPEC CHECKSUMS:
-  OCHamcrest: b284c9592c28c1e4025a8542e67ea41a635d0d73
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  OCHamcrest: a613690381f1dac7637c18962c10dbe8feca4bb5
   SwiftHamcrest: 67454f9c4c7fae8d7a0f82dfd42f8a54a79095b1
 
-PODFILE CHECKSUM: eff38911633fcba015b1db0d4949413fbdd856f3
+PODFILE CHECKSUM: 18ee9bb72dbc31f22f4b226586646dc22bb8dc03
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
