@@ -33,7 +33,7 @@ open class SnapshotTestCase: FBSnapshotTestCase {
 
     public func verifySnapshot(_ viewController: UIViewController, device: Device, variants: SnapshotVariant.Builder, tolerance: SnapshotTolerance = .zero, identifier: String? = nil, file: StaticString = #filePath, line: UInt = #line) {
         let testClass = NSStringFromClass(type(of: self))
-        let testName = NSStringFromSelector(invocation!.selector)
+        let testName = NSStringFromSelector(invocation!.selector).replacingOccurrences(of: ":", with: "_")
         folderName = "\(UIDevice.current.systemName)/\(UIDevice.current.systemVersion)/\(testClass)/\(testName)/\(device.name)"
         let allVariants = variants.build()
         var skippedVariants = 0
