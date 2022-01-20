@@ -14,6 +14,8 @@ public extension Device.Family {
                 self = .pad
             case .tv, .carPlay, .mac, .unspecified:
                 return nil
+            default:
+                return nil
         }
     }
 }
