@@ -10,11 +10,11 @@ class UIView_SimulatedGesturesTests: UnitTestCase {
     private let view = UIView()
     private let spy = GestureRecognizerActionInvocationSpy()
     
-    func testInvokesTapGestureRecognizerAction() {
+    func testInvokesTapGestureRecognizerAction() throws {
         let tapRecognizer = UITapGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
         view.addGestureRecognizer(tapRecognizer)
         
-        view.simulateTapRecognition()
+        try view.simulateTapRecognition()
         
         assertThat(spy.actionInvocations, equalTo(1))
     }
@@ -22,17 +22,16 @@ class UIView_SimulatedGesturesTests: UnitTestCase {
     func testFailsWhenTapGestureRecognizerIsNotFound() {
         let tapRecognizer = UITapGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
         view.addGestureRecognizer(tapRecognizer)
-        
         view.removeGestureRecognizer(tapRecognizer)
         
-        view.simulateTapRecognition(XCTAssertTrue(true))
+        assertThrows(try view.simulateTapRecognition())
     }
     
-    func testInvokesSwipeGestureRecognizerAction() {
+    func testInvokesSwipeGestureRecognizerAction() throws {
         let swipeRecognizer = UISwipeGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
         view.addGestureRecognizer(swipeRecognizer)
         
-        view.simulateSwipeRecognition()
+        try view.simulateSwipeRecognition()
         
         assertThat(spy.actionInvocations, equalTo(1))
     }
@@ -40,10 +39,26 @@ class UIView_SimulatedGesturesTests: UnitTestCase {
     func testFailsWhenSwipeGestureRecognizerIsNotFound() {
         let swipeRecognizer = UISwipeGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
         view.addGestureRecognizer(swipeRecognizer)
-        
         view.removeGestureRecognizer(swipeRecognizer)
         
-        view.simulateSwipeRecognition(XCTAssertTrue(true))
+        assertThrows(try view.simulateSwipeRecognition())
+    }
+
+    func testInvokesLongGestureRecognizerAction() throws {
+        let longRecognizer = UILongPressGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
+        view.addGestureRecognizer(longRecognizer)
+
+        try view.simulateLongPressRecognition()
+
+        assertThat(spy.actionInvocations, equalTo(1))
+    }
+
+    func testFailsWhenLongPressGestureRecognizerIsNotFound() {
+        let longRecognizer = UILongPressGestureRecognizer(target: spy, action: #selector(GestureRecognizerActionInvocationSpy.action(_:)))
+        view.addGestureRecognizer(longRecognizer)
+        view.removeGestureRecognizer(longRecognizer)
+
+        assertThrows(try view.simulateLongPressRecognition())
     }
 }
 

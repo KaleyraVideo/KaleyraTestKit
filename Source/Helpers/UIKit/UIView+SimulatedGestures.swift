@@ -5,36 +5,32 @@ import UIKit
 
 public extension UIView {
     
-    func simulateTapRecognition(_ value: @autoclosure () throws -> Void = XCTFail("Could not locate any tap gesture recognizer in the view provided", file: #filePath, line: #line), file: StaticString = #filePath, line: UInt = #line) {
-        guard let recognizers = gestureRecognizers else {
-            try! value()
-            return
-        }
-
-        let tapRecognizers = recognizers.compactMap({ $0 as? UITapGestureRecognizer})
-
-        guard !tapRecognizers.isEmpty else {
-            try! value()
-            return
-        }
-
-        tapRecognizers.forEach { invokeAction(on: $0) }
+    func simulateTapRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
+        try simulateGestureRecognition(UITapGestureRecognizer.self, file: file, line: line)
     }
     
-    func simulateSwipeRecognition(_ value: @autoclosure () throws -> Void = XCTFail("Could not locate any swipe gesture recognizer in the view provided", file: #filePath, line: #line), file: StaticString = #filePath, line: UInt = #line) {
-        guard let recognizers = gestureRecognizers else {
-            try! value()
-            return
+    func simulateSwipeRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
+        try simulateGestureRecognition(UISwipeGestureRecognizer.self, file: file, line: line)
+    }
+
+    func simulateLongPressRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
+        try simulateGestureRecognition(UILongPressGestureRecognizer.self, file: file, line: line)
+    }
+
+    func simulateGestureRecognition<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type,
+                                                                    file: StaticString = #filePath,
+                                                                    line: UInt = #line) throws {
+        let recognizers = allRecognizers(Recognizer.self)
+
+        guard !recognizers.isEmpty else {
+            throw GestureRecognizerNotFoundError()
         }
 
-        let swipeRecognizers = recognizers.compactMap({ $0 as? UISwipeGestureRecognizer})
+        recognizers.forEach { invokeAction(on: $0) }
+    }
 
-        guard !swipeRecognizers.isEmpty else {
-            try! value()
-            return
-        }
-
-        swipeRecognizers.forEach { invokeAction(on: $0) }
+    private func allRecognizers<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type) -> [Recognizer] {
+        gestureRecognizers?.compactMap({ $0 as? Recognizer }) ?? []
     }
     
     private func invokeAction(on recognizer: UIGestureRecognizer) {
@@ -42,3 +38,5 @@ public extension UIView {
         invoker.invokeActions(on: recognizer)
     }
 }
+
+struct GestureRecognizerNotFoundError: Error {}
