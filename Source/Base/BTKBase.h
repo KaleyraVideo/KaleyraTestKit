@@ -3,7 +3,6 @@
 
 #import <BandyerTestKit/BTKMacro.h>
 #import <BandyerTestKit/BTKUnitTestCase.h>
-#import <BandyerTestKit/BTKiOS9AndBelowTestCase.h>
 #import <BandyerTestKit/BTKiOS10AndBelowTestCase.h>
 #import <BandyerTestKit/BTKiOS10AndAboveTestCase.h>
 #import <BandyerTestKit/BTKiOS11AndAboveTestCase.h>
