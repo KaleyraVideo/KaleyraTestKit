@@ -1,4 +1,4 @@
-// Copyright © 2018-2022 Bandyer S.r.l. All Rights Reserved.
+// Copyright © 2018-2022 Kaleyra S.p.a. All Rights Reserved.
 // See LICENSE for licensing information
 
 #import <BandyerTestKit/BTKUnitTestCase.h>

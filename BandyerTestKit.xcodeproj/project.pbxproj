@@ -117,6 +117,8 @@
 		A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */; };
 		A9CFC78D25C464CB000C39D4 /* EnumMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC78C25C464CB000C39D4 /* EnumMatchers.swift */; };
 		A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC79025C4657C000C39D4 /* AnyNSError.swift */; };
+		A9E51B932811471D0005A382 /* BTKiOS11AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E51B912811471C0005A382 /* BTKiOS11AndBelowTestCase.h */; };
+		A9E51B942811471D0005A382 /* BTKiOS11AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E51B922811471C0005A382 /* BTKiOS11AndBelowTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +247,8 @@
 		A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMatchers.swift; sourceTree = "<group>"; };
 		A9CFC78C25C464CB000C39D4 /* EnumMatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumMatchers.swift; sourceTree = "<group>"; };
 		A9CFC79025C4657C000C39D4 /* AnyNSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNSError.swift; sourceTree = "<group>"; };
+		A9E51B912811471C0005A382 /* BTKiOS11AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS11AndBelowTestCase.h; sourceTree = "<group>"; };
+		A9E51B922811471C0005A382 /* BTKiOS11AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS11AndBelowTestCase.m; sourceTree = "<group>"; };
 		AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0944B87AE0AD98BAD88325 /* Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; path = "Target Support Files/Pods-BandyerTestKit-BandyerTestKitTests/Pods-BandyerTestKit-BandyerTestKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -370,6 +374,8 @@
 				A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */,
 				A9045F0F25798B3A00E8530C /* BTKiOS11AndAboveTestCase.h */,
 				A9045F1625798B3A00E8530C /* BTKiOS11AndAboveTestCase.m */,
+				A9E51B912811471C0005A382 /* BTKiOS11AndBelowTestCase.h */,
+				A9E51B922811471C0005A382 /* BTKiOS11AndBelowTestCase.m */,
 				A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */,
 				A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */,
 				A9045F0E25798B3A00E8530C /* BTKiOS12AndBelowTestCase.h */,
@@ -649,6 +655,7 @@
 				A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */,
 				A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */,
 				A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */,
+				A9E51B932811471D0005A382 /* BTKiOS11AndBelowTestCase.h in Headers */,
 				A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */,
 				A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */,
 				A9045F4125798B3B00E8530C /* BTKiOS12AndBelowTestCase.h in Headers */,
@@ -712,7 +719,7 @@
 				CLASSPREFIX = BTK;
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
-				ORGANIZATIONNAME = "Bandyer S.r.l.";
+				ORGANIZATIONNAME = "Kaleyra S.p.a.";
 				TargetAttributes = {
 					A91AD43725798452004088D1 = {
 						CreatedOnToolsVersion = 12.2;
@@ -844,6 +851,7 @@
 				A93AEDE326A70CF300D8DA3F /* String+StaticString.swift in Sources */,
 				A93AEDBF26A7098200D8DA3F /* NotAvailableMultitaskingModeError.swift in Sources */,
 				A9045F1925798B3B00E8530C /* UIViewControllerObserver.swift in Sources */,
+				A9E51B942811471D0005A382 /* BTKiOS11AndBelowTestCase.m in Sources */,
 				A93AEDBB26A7098200D8DA3F /* Screen.swift in Sources */,
 				A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */,
 				A9045F2D25798B3B00E8530C /* XCTestCase+Skip.swift in Sources */,
