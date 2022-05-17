@@ -117,7 +117,7 @@
 		A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */; };
 		A9CFC78D25C464CB000C39D4 /* EnumMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC78C25C464CB000C39D4 /* EnumMatchers.swift */; };
 		A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC79025C4657C000C39D4 /* AnyNSError.swift */; };
-		A9E51B932811471D0005A382 /* BTKiOS11AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E51B912811471C0005A382 /* BTKiOS11AndBelowTestCase.h */; };
+		A9E51B932811471D0005A382 /* BTKiOS11AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E51B912811471C0005A382 /* BTKiOS11AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9E51B942811471D0005A382 /* BTKiOS11AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E51B922811471C0005A382 /* BTKiOS11AndBelowTestCase.m */; };
 /* End PBXBuildFile section */
 

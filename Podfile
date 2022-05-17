@@ -1,12 +1,11 @@
-
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'BandyerTestKit' do
   use_frameworks!
 
   pod 'SwiftHamcrest', '~> 2.2'
-  pod 'OCHamcrest', '~> 7.2'
-  pod 'iOSSnapshotTestCase', '~> 6.2'
+  pod 'OCHamcrest', '~> 9.0'
+  pod 'iOSSnapshotTestCase', '~> 8.0'
 
   target 'BandyerTestKitTests' do
     # Pods for testing
