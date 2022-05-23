@@ -5,7 +5,6 @@ target 'BandyerTestKit' do
 
   pod 'SwiftHamcrest', '~> 2.2'
   pod 'OCHamcrest', '~> 9.0'
-  pod 'iOSSnapshotTestCase', '~> 8.0'
 
   target 'BandyerTestKitTests' do
     # Pods for testing

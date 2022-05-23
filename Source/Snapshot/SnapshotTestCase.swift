@@ -3,7 +3,7 @@
 
 import Foundation
 import XCTest
-import FBSnapshotTestCase
+import iOSSnapshotTestCase
 
 open class SnapshotTestCase: FBSnapshotTestCase {
     

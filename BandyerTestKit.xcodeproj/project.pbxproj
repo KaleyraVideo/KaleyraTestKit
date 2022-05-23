@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -112,6 +112,7 @@
 		A93AEE1C26A7307700D8DA3F /* Screen+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AEE1B26A7307700D8DA3F /* Screen+UIScreen.swift */; };
 		A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */; };
 		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A98AB68D283B8A220013FF9C /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = A98AB68C283B8A220013FF9C /* iOSSnapshotTestCase */; };
 		A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CFC77625C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77425C45A05000C39D4 /* BTKiOS12AndAboveTestCase.m */; };
 		A9CFC77D25C45B1B000C39D4 /* ResultMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFC77C25C45B1B000C39D4 /* ResultMatchers.swift */; };
@@ -259,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */,
+				A98AB68D283B8A220013FF9C /* iOSSnapshotTestCase in Frameworks */,
 				8C058BA2BB1FE395C566A504 /* Pods_BandyerTestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +688,9 @@
 			dependencies = (
 			);
 			name = BandyerTestKit;
+			packageProductDependencies = (
+				A98AB68C283B8A220013FF9C /* iOSSnapshotTestCase */,
+			);
 			productName = BandyerTestKit;
 			productReference = A91AD43825798452004088D1 /* BandyerTestKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -738,6 +743,9 @@
 				Base,
 			);
 			mainGroup = A91AD42E25798452004088D1;
+			packageReferences = (
+				A98AB68B283B8A220013FF9C /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
 			productRefGroup = A91AD43925798452004088D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1190,6 +1198,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A98AB68B283B8A220013FF9C /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A98AB68C283B8A220013FF9C /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A98AB68B283B8A220013FF9C /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A91AD42F25798452004088D1 /* Project object */;
 }
