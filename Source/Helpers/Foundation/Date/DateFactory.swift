@@ -49,7 +49,7 @@ public extension DateFactory {
 @available(iOS 12.0, *)
 extension Date: DateFactory {
 
-    init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int = 0, millisecond: Int = 0, timeZone: TimeZone? = TimeZone(abbreviation: "UTC")) throws {
+    public init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int = 0, millisecond: Int = 0, timeZone: TimeZone? = TimeZone(abbreviation: "UTC")) throws {
         self = try Date.makeDate(year: year, month: month, day: day, hour: hour, minute: minute, second: second, millisecond: millisecond, timezone: timeZone)
     }
 }
