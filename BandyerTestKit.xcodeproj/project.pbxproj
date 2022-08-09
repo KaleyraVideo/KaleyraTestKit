@@ -20,6 +20,8 @@
 		6D4DEEF92888A4DB00260666 /* AnyURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4DEEF42888A4DB00260666 /* AnyURL.swift */; };
 		6D4DEEFC2888A4F000260666 /* UIColor+Resolved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4DEEFA2888A4F000260666 /* UIColor+Resolved.swift */; };
 		6D4DEEFD2888A4F000260666 /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4DEEFB2888A4F000260666 /* UIImageHelper.swift */; };
+		6DBF914628A2AB7D007D3509 /* JSONDecodingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF914528A2AB7D007D3509 /* JSONDecodingTestCase.swift */; };
+		6DBF914828A2ABA6007D3509 /* JSONEncodingTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF914728A2ABA6007D3509 /* JSONEncodingTrait.swift */; };
 		8C058BA2BB1FE395C566A504 /* Pods_BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2D37FB88ACA8ACFBE7799F /* Pods_BandyerTestKit.framework */; };
 		A5E5C2EFF6F0B0EE65336D83 /* Pods_BandyerTestKit_BandyerTestKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9071F48C0E307CB78D1D9105 /* Pods_BandyerTestKit_BandyerTestKitTests.framework */; };
 		A9045F1725798B3B00E8530C /* NSExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -162,6 +164,8 @@
 		6D4DEEF42888A4DB00260666 /* AnyURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyURL.swift; sourceTree = "<group>"; };
 		6D4DEEFA2888A4F000260666 /* UIColor+Resolved.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Resolved.swift"; sourceTree = "<group>"; };
 		6D4DEEFB2888A4F000260666 /* UIImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageHelper.swift; sourceTree = "<group>"; };
+		6DBF914528A2AB7D007D3509 /* JSONDecodingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodingTestCase.swift; sourceTree = "<group>"; };
+		6DBF914728A2ABA6007D3509 /* JSONEncodingTrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodingTrait.swift; sourceTree = "<group>"; };
 		9071F48C0E307CB78D1D9105 /* Pods_BandyerTestKit_BandyerTestKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BandyerTestKit_BandyerTestKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9045EDE25798B3A00E8530C /* NSExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSExceptionCatcher.h; sourceTree = "<group>"; };
 		A9045EDF25798B3A00E8530C /* XCTestCase+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Unwrap.swift"; sourceTree = "<group>"; };
@@ -325,7 +329,9 @@
 		6D4DEEE02888A4C300260666 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				6DBF914528A2AB7D007D3509 /* JSONDecodingTestCase.swift */,
 				6D4DEEE12888A4C300260666 /* JSONDecodingTrait.swift */,
+				6DBF914728A2ABA6007D3509 /* JSONEncodingTrait.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -982,6 +988,7 @@
 				A9045F2325798B3B00E8530C /* UIWindowAwareTestCase.swift in Sources */,
 				A9045F2D25798B3B00E8530C /* XCTestCase+Skip.swift in Sources */,
 				A9045F2925798B3B00E8530C /* Stopwatch.swift in Sources */,
+				6DBF914828A2ABA6007D3509 /* JSONEncodingTrait.swift in Sources */,
 				A9045F1A25798B3B00E8530C /* UIAlertController+ActionRetrieval.swift in Sources */,
 				A9045F2025798B3B00E8530C /* UIButton+SimulateTap.swift in Sources */,
 				A93AEDA526A7095900D8DA3F /* Array+DeviceFilters.swift in Sources */,
@@ -1013,6 +1020,7 @@
 				A9045F2625798B3B00E8530C /* XCTestCase+Wait.swift in Sources */,
 				A9045F2525798B3B00E8530C /* OperatingSystemVersion+Extension.swift in Sources */,
 				A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */,
+				6DBF914628A2AB7D007D3509 /* JSONDecodingTestCase.swift in Sources */,
 				A93AEDA326A7094A00D8DA3F /* Device.swift in Sources */,
 				A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */,
 				A93AEDC326A7099600D8DA3F /* CGSize+Widths.swift in Sources */,
