@@ -6,10 +6,15 @@ import Foundation
 public protocol JSONDecodingTestCase: JSONDecodingTrait {
     associatedtype SUT where SUT: Decodable
 
+    func decode(_ json: String) throws -> SUT
     func decode(_ json: String, userInfo: [CodingUserInfoKey : Any]) throws -> SUT
 }
 
 public extension JSONDecodingTestCase {
+
+    func decode(_ json: String) throws -> SUT {
+        try decode(SUT.self, json: json)
+    }
 
     func decode(_ json: String, userInfo: [CodingUserInfoKey : Any] = [:]) throws -> SUT {
         try decode(SUT.self, json: json, userInfo: userInfo)
