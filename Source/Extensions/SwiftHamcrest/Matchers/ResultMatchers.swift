@@ -4,16 +4,16 @@
 import Foundation
 import Hamcrest
 
-public func isSuccess<T>() -> Matcher<Result<T, Error>> {
+public func isSuccess<T, E>() -> Matcher<Result<T, E>> where E: Error {
     return isSuccess(withValue: anything())
 }
 
-public func isSuccess<T>(withValue matcher: Matcher<T>) -> Matcher<Result<T, Error>> {
+public func isSuccess<T, E>(withValue matcher: Matcher<T>) -> Matcher<Result<T, E>> where E: Error {
     var expectedDesc = "Success"
     if !matcher.description.isEmpty {
         expectedDesc += " with value " + matcher.description
     }
-    return Matcher(expectedDesc) { (r: Result<T, Error>) -> MatchResult in
+    return Matcher(expectedDesc) { (r: Result<T, E>) -> MatchResult in
         switch r {
             case .success(let value):
                 return matcher.matches(value)
@@ -23,16 +23,16 @@ public func isSuccess<T>(withValue matcher: Matcher<T>) -> Matcher<Result<T, Err
     }
 }
 
-public func isFailure<T>() -> Matcher<Result<T, Error>> {
+public func isFailure<T, E>() -> Matcher<Result<T, E>> where E: Error {
     return isFailure(withError: anything())
 }
 
-public func isFailure<T>(withError matcher: Matcher<Any>) -> Matcher<Result<T, Error>> {
+public func isFailure<T, E>(withError matcher: Matcher<Any>) -> Matcher<Result<T, E>> where E: Error {
     var expectedDesc = "Failure"
     if !matcher.description.isEmpty {
         expectedDesc += " with error " + matcher.description
     }
-    return Matcher(expectedDesc) { (r: Result<T, Error>) -> MatchResult in
+    return Matcher(expectedDesc) { (r: Result<T, E>) -> MatchResult in
         switch r {
             case .success(_):
                 return .mismatch("Expected failure got success instead")
