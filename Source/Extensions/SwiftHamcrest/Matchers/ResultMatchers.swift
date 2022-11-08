@@ -8,6 +8,21 @@ public func isSuccess<T, E>() -> Matcher<Result<T, E>> where E: Error {
     return isSuccess(withValue: anything())
 }
 
+public func isSuccess<T, E>(withValue matcher: Matcher<Any>) -> Matcher<Result<T, E>> where E: Error {
+    var expectedDesc = "Success"
+    if !matcher.description.isEmpty {
+        expectedDesc += " with value " + matcher.description
+    }
+    return Matcher(expectedDesc) { (r: Result<T, E>) -> MatchResult in
+        switch r {
+            case .success(let value):
+                return matcher.matches(value)
+            case .failure(_):
+                return .mismatch("Expected success got failure instead")
+        }
+    }
+}
+
 public func isSuccess<T, E>(withValue matcher: Matcher<T>) -> Matcher<Result<T, E>> where E: Error {
     var expectedDesc = "Success"
     if !matcher.description.isEmpty {
