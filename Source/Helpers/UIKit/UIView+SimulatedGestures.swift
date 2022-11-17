@@ -20,7 +20,7 @@ public extension UIView {
     func simulateGestureRecognition<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type,
                                                                     file: StaticString = #filePath,
                                                                     line: UInt = #line) throws {
-        let recognizers = allRecognizers(Recognizer.self)
+        let recognizers = allRecognizersEnabled(Recognizer.self)
 
         guard !recognizers.isEmpty else {
             throw GestureRecognizerNotFoundError()
@@ -32,7 +32,11 @@ public extension UIView {
     private func allRecognizers<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type) -> [Recognizer] {
         gestureRecognizers?.compactMap({ $0 as? Recognizer }) ?? []
     }
-    
+
+    private func allRecognizersEnabled<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type) -> [Recognizer] {
+        allRecognizers(Recognizer.self).filter({ $0.isEnabled })
+    }
+
     private func invokeAction(on recognizer: UIGestureRecognizer) {
         let invoker = GestureRecognizerActionsInvoker()
         invoker.invokeActions(on: recognizer)
