@@ -8,6 +8,7 @@ public extension String {
     static let alice = "alice"
     static let bob = "bob"
     static let charlie = "charlie"
+    static let dave = "dave"
 
     static let foo = "foo"
     static let bar = "bar"

@@ -3,6 +3,4 @@
 
 import Foundation
 
-public func anyURL() -> URL {
-    URL(string: "https://www.bandyer.com")!
-}
+public func anyURL() -> URL { .bandyer }

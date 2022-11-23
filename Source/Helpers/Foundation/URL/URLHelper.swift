@@ -7,7 +7,7 @@ public class URLHelper {
 
     enum URLError: Error {
         case invalidURL(String)
-        case invalidResourceURL(String)
+        case resourceNotFound(name: String, ext: String, bundle: Bundle)
     }
 
     public static func makeURL(_ string: String) throws -> URL {
@@ -19,7 +19,7 @@ public class URLHelper {
 
     public static func makeResourceURL(_ resource: String, ext: String, bundle: Bundle) throws -> URL {
         guard let url = bundle.url(forResource: resource, withExtension: ext) else {
-            throw URLError.invalidResourceURL(resource)
+            throw URLError.resourceNotFound(name: resource, ext: ext, bundle: bundle)
         }
         return url
     }
