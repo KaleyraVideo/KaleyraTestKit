@@ -52,4 +52,20 @@ extension Date: DateFactory {
     public init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int = 0, millisecond: Int = 0, timeZone: TimeZone? = TimeZone(abbreviation: "UTC")) throws {
         self = try Date.makeDate(year: year, month: month, day: day, hour: hour, minute: minute, second: second, millisecond: millisecond, timezone: timeZone)
     }
+
+    public static var mayTen: Date {
+        (try? .init(year: 2022, month: 5, day: 10, hour: 12, minute: 55)) ?? Date()
+    }
+
+    public static var mayEleven: Date {
+        (try? .init(year: 2022, month: 5, day: 11, hour: 13, minute: 33)) ?? Date()
+    }
+
+    public static var mayTwelve: Date {
+        (try? .init(year: 2022, month: 5, day: 12, hour: 13, minute: 33)) ?? Date()
+    }
+
+    public static var mayTwentyTwo: Date {
+        (try? .init(year: 2022, month: 5, day: 22, hour: 12, minute: 55)) ?? Date()
+    }
 }
