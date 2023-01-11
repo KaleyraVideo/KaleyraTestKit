@@ -9,6 +9,8 @@ public extension String {
     static let bob = "bob"
     static let charlie = "charlie"
     static let dave = "dave"
+    static let fanny = "fanny"
+    static let george = "george"
 
     static let foo = "foo"
     static let bar = "bar"
