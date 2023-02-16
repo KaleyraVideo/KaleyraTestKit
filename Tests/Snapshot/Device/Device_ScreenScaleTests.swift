@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class Device_ScreenScaleTests: UnitTestCase {
+final class Device_ScreenScaleTests: UnitTestCase {
 
     override func setUp() {
         super.setUp()

@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class Device_MultitaskingModesTests: UnitTestCase {
+final class Device_MultitaskingModesTests: UnitTestCase {
 
     func testMultitaskingModesShouldReturnAllCasesForiPadDevice() {
         let device = Device(model: .iPadPro11)

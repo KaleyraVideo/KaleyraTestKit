@@ -10,7 +10,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class Screen_UIScreenTests: UnitTestCase {
+final class Screen_UIScreenTests: UnitTestCase {
 
     func testScreenScaleFromUIScreenWithScaleEqualToOneShouldReturnMatchingScreenScale() {
         let screen = FakeScreen()

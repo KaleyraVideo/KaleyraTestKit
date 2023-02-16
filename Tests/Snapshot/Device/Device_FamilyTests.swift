@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class Device_FamilyTests: UnitTestCase {
+final class Device_FamilyTests: UnitTestCase {
 
     override func setUp() {
         super.setUp()

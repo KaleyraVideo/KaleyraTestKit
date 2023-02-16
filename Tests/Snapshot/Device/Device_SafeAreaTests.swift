@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class Device_SafeAreaTests: UnitTestCase {
+final class Device_SafeAreaTests: UnitTestCase {
 
     override func setUp() {
         super.setUp()

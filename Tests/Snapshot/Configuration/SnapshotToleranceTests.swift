@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class SnapshotToleranceTests: UnitTestCase {
+final class SnapshotToleranceTests: UnitTestCase {
 
     func testZeroShouldCreateSnapshotToleranceValueWithZeroPerPixelAndZeroOverallValues() {
         let sut = SnapshotTolerance.zero

@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class OperatingSystemVersion_ExtensionTests: UnitTestCase {
+final class OperatingSystemVersion_ExtensionTests: UnitTestCase {
 
     func testCreatesVersionFromInteger() {
         let sut = OperatingSystemVersion(11)

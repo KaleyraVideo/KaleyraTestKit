@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class VersionTests: UnitTestCase {
+final class VersionTests: UnitTestCase {
 
     func testVersionCompareDifferentMajor() {
         let lower = Version(major: 14, minor: 0)

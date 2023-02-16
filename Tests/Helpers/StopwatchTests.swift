@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 @testable import BandyerTestKit
 
-class StopwatchTests: UnitTestCase {
+final class StopwatchTests: UnitTestCase {
 
     func testElapsedTimeReturnsNeverWhenStartTimeIsNil() {
         let sut = makeSUTStub(startTime: nil, endTime: DispatchTime.distantFuture)

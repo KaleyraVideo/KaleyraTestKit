@@ -10,7 +10,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class UIButton_SimulateTapTests: UnitTestCase {
+final class UIButton_SimulateTapTests: UnitTestCase {
 
     func testSimulateTapCallsTouchDownAndTouchUpInsideActions() {
         let button = UIButton(type: .system)

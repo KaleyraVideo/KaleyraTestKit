@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class UIView_DescendantsTests: UnitTestCase {
+final class UIView_DescendantsTests: UnitTestCase {
     
     private let sut = UIView()
 

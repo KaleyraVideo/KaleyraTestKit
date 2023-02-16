@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class DeviceTests: UnitTestCase {
+final class DeviceTests: UnitTestCase {
 
     func testAllDevices() {
         let devices = Device.all

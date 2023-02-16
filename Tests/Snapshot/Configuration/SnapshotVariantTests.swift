@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 @testable import BandyerTestKit
 
-class SnapshotVariantTests: UnitTestCase, ConditionalTestCase {
+final class SnapshotVariantTests: UnitTestCase, ConditionalTestCase {
 
     func testShouldReturnConfigurationWithSizeInformationForPortraitOrientation() throws {
         let variant = SnapshotVariant(orientation: .portrait)

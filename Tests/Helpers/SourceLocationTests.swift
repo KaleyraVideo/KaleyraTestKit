@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class SourceLocationTests: UnitTestCase {
+final class SourceLocationTests: UnitTestCase {
 
     func testDescription() {
         let sut = SourceLocation(file: #file, line: #line)

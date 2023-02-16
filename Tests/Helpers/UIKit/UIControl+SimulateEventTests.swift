@@ -10,7 +10,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class UIControl_SimulateEventTests: UnitTestCase {
+final class UIControl_SimulateEventTests: UnitTestCase {
 
     func testSimulateEventCallsAllTargetsActionsBoundToTheEventInvokingTheSelectorsTakingNoArguments() {
         let button = UIButton(type: .system)

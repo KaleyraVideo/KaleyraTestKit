@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 import BandyerTestKit
 
-class UIView_SimulatedGesturesTests: UnitTestCase {
+final class UIView_SimulatedGesturesTests: UnitTestCase {
 
     private let view = UIView()
     private let spy = GestureRecognizerActionInvocationSpy()

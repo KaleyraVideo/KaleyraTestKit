@@ -9,7 +9,7 @@ import SwiftHamcrest
 #endif
 @testable import BandyerTestKit
 
-class Device_SizeClassesTests: UnitTestCase {
+final class Device_SizeClassesTests: UnitTestCase {
 
     override func setUp() {
         super.setUp()
@@ -298,6 +298,10 @@ class Device_SizeClassesTests: UnitTestCase {
                                               error: AnError,
                                               file: String = #filePath,
                                               line: UInt = #line) where AnError: Equatable {
-        Hamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
+        #if canImport(Hamcrest)
+            Hamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
+        #elseif canImport(SwiftHamcrest)
+            SwiftHamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
+        #endif
     }
 }
