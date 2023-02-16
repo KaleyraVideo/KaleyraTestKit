@@ -2,7 +2,11 @@
 // See LICENSE.txt for licensing information
 
 import XCTest
+#if canImport(Hamcrest)
 import Hamcrest
+#elseif canImport(SwiftHamcrest)
+import SwiftHamcrest
+#endif
 import BandyerTestKit
 
 class UIViewControllerObserverTests: XCTestCase {

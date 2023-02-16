@@ -2,7 +2,11 @@
 // See LICENSE for licensing information
 
 import Foundation
+#if canImport(Hamcrest)
 import Hamcrest
+#elseif canImport(SwiftHamcrest)
+import SwiftHamcrest
+#endif
 
 @discardableResult
 public func assertThatCGFloat(_ actualValue: CGFloat,
@@ -11,8 +15,16 @@ public func assertThatCGFloat(_ actualValue: CGFloat,
                               file: StaticString = #filePath,
                               line: UInt = #line) -> String {
 #if swift(>=5.5)
-    return Hamcrest.assertThat(actualValue, closeTo(expectedValue, 0.001), file: file, line: line)
+    #if canImport(Hamcrest)
+        return Hamcrest.assertThat(actualValue, closeTo(expectedValue, 0.001), file: file, line: line)
+    #elseif canImport(SwiftHamcrest)
+        return SwiftHamcrest.assertThat(actualValue, closeTo(expectedValue, 0.001), file: file, line: line)
+    #endif
 #else
-    return Hamcrest.assertThat(Double(actualValue), closeTo(expectedValue, 0.001), file: file, line: line)
+    #if canImport(Hamcrest)
+        return Hamcrest.assertThat(Double(actualValue), closeTo(expectedValue, 0.001), file: file, line: line)
+    #elseif canImport(SwiftHamcrest)
+        return SwiftHamcrest.assertThat(Double(actualValue), closeTo(expectedValue, 0.001), file: file, line: line)
+    #endif
 #endif
 }
