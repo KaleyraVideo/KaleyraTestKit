@@ -1,6 +1,6 @@
 PODS:
   - OCHamcrest (9.0.1)
-  - SwiftHamcrest (2.2.1)
+  - SwiftHamcrest (2.2.4)
 
 DEPENDENCIES:
   - OCHamcrest (~> 9.0)
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   OCHamcrest: e84ce6833fb8ab16f34e3a5e004917b6f566755a
-  SwiftHamcrest: 67454f9c4c7fae8d7a0f82dfd42f8a54a79095b1
+  SwiftHamcrest: a45dd878978049c0953259aa01c34fd7258d0340
 
 PODFILE CHECKSUM: 21e12afde29b3638d81ca3050c52f9f88af49f46
 
