@@ -3,9 +3,7 @@
 
 import Foundation
 
-public struct TestHelpers {
-
-}
+public enum TestHelpers {}
 
 public extension TestHelpers {
 
