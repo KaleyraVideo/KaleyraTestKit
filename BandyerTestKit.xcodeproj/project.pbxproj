@@ -54,15 +54,11 @@
 		A9045F2F25798B3B00E8530C /* CompletionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF825798B3A00E8530C /* CompletionSpy.swift */; };
 		A9045F3025798B3B00E8530C /* XCTestCase+MemoryLeakAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */; };
 		A9045F3125798B3B00E8530C /* HamcrestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */; };
-		A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */; };
 		A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045EFF25798B3A00E8530C /* BTKThrowsException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3425798B3B00E8530C /* BTKThreadAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0025798B3A00E8530C /* BTKThreadAssert.m */; };
-		A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */; };
 		A9045F3625798B3B00E8530C /* BTKThreadAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0225798B3A00E8530C /* BTKThreadAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3725798B3B00E8530C /* BTKThrowsException.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0325798B3A00E8530C /* BTKThrowsException.m */; };
-		A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3925798B3B00E8530C /* BTKHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0525798B3A00E8530C /* BTKHamcrest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9045F3B25798B3B00E8530C /* AnimationsDisabledTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */; };
 		A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */; };
 		A9045F3D25798B3B00E8530C /* BTKiOS13AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,8 +86,6 @@
 		A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */; };
 		A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5D25798B6000E8530C /* StopwatchTests.swift */; };
 		A9045F7025798B6000E8530C /* BTKThrowsExceptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */; };
-		A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */; };
-		A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */; };
 		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
 		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
 		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -200,15 +194,11 @@
 		A9045EF825798B3A00E8530C /* CompletionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionSpy.swift; sourceTree = "<group>"; };
 		A9045EF925798B3A00E8530C /* XCTestCase+MemoryLeakAssertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakAssertions.swift"; sourceTree = "<group>"; };
 		A9045EFC25798B3A00E8530C /* HamcrestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamcrestExtension.swift; sourceTree = "<group>"; };
-		A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKGeometryAssert.m; sourceTree = "<group>"; };
 		A9045EFF25798B3A00E8530C /* BTKThrowsException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKThrowsException.h; sourceTree = "<group>"; };
 		A9045F0025798B3A00E8530C /* BTKThreadAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThreadAssert.m; sourceTree = "<group>"; };
-		A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKIsEqualToGeometryValue.m; sourceTree = "<group>"; };
 		A9045F0225798B3A00E8530C /* BTKThreadAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKThreadAssert.h; sourceTree = "<group>"; };
 		A9045F0325798B3A00E8530C /* BTKThrowsException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThrowsException.m; sourceTree = "<group>"; };
-		A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKGeometryAssert.h; sourceTree = "<group>"; };
 		A9045F0525798B3A00E8530C /* BTKHamcrest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKHamcrest.h; sourceTree = "<group>"; };
-		A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKIsEqualToGeometryValue.h; sourceTree = "<group>"; };
 		A9045F0825798B3A00E8530C /* AnimationsDisabledTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsDisabledTestCase.swift; sourceTree = "<group>"; };
 		A9045F0925798B3A00E8530C /* BTKUnitTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKUnitTestCase.m; sourceTree = "<group>"; };
 		A9045F0A25798B3A00E8530C /* BTKiOS13AndAboveTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS13AndAboveTestCase.h; sourceTree = "<group>"; };
@@ -236,8 +226,6 @@
 		A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+ExtensionTests.swift"; sourceTree = "<group>"; };
 		A9045F5D25798B6000E8530C /* StopwatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
 		A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKThrowsExceptionTest.m; sourceTree = "<group>"; };
-		A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKIsEqualToGeometryValueTest.m; sourceTree = "<group>"; };
-		A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKGeometryAssertTest.m; sourceTree = "<group>"; };
 		A9045F7A25798BBB00E8530C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A91AD43825798452004088D1 /* BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD43B25798452004088D1 /* BandyerTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BandyerTestKit.h; sourceTree = "<group>"; };
@@ -491,11 +479,7 @@
 		A9045EFD25798B3A00E8530C /* OCHamcrest */ = {
 			isa = PBXGroup;
 			children = (
-				A9045F0425798B3A00E8530C /* BTKGeometryAssert.h */,
-				A9045EFE25798B3A00E8530C /* BTKGeometryAssert.m */,
 				A9045F0525798B3A00E8530C /* BTKHamcrest.h */,
-				A9045F0625798B3A00E8530C /* BTKIsEqualToGeometryValue.h */,
-				A9045F0125798B3A00E8530C /* BTKIsEqualToGeometryValue.m */,
 				A9045F0225798B3A00E8530C /* BTKThreadAssert.h */,
 				A9045F0025798B3A00E8530C /* BTKThreadAssert.m */,
 				A9045EFF25798B3A00E8530C /* BTKThrowsException.h */,
@@ -579,8 +563,6 @@
 			isa = PBXGroup;
 			children = (
 				A9045F6025798B6000E8530C /* BTKThrowsExceptionTest.m */,
-				A9045F6125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m */,
-				A9045F6225798B6000E8530C /* BTKGeometryAssertTest.m */,
 			);
 			path = OCHamcrest;
 			sourceTree = "<group>";
@@ -791,9 +773,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9045F3825798B3B00E8530C /* BTKGeometryAssert.h in Headers */,
 				A9045F2425798B3B00E8530C /* BTKGestureRecognizerActionsInvoker.h in Headers */,
-				A9045F3A25798B3B00E8530C /* BTKIsEqualToGeometryValue.h in Headers */,
 				A9045F3325798B3B00E8530C /* BTKThrowsException.h in Headers */,
 				A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */,
 				A9045F4425798B3B00E8530C /* BTKUnitTestCase.h in Headers */,
@@ -1020,7 +1000,6 @@
 				A93AEDAF26A7096B00D8DA3F /* Device+MultitaskingMode.swift in Sources */,
 				A9CFC79125C4657C000C39D4 /* AnyNSError.swift in Sources */,
 				A9045F1F25798B3B00E8530C /* UICollectionViewController+CellRetrieving.swift in Sources */,
-				A9045F3225798B3B00E8530C /* BTKGeometryAssert.m in Sources */,
 				A9045F1B25798B3B00E8530C /* UITraitCollection+FactoryMethods.swift in Sources */,
 				A9045F2825798B3B00E8530C /* NSExceptionCatcher.m in Sources */,
 				A9045F2125798B3B00E8530C /* UIControl+SimulateEvent.swift in Sources */,
@@ -1033,7 +1012,6 @@
 				A93AEDAE26A7096B00D8DA3F /* Device+SafeArea.swift in Sources */,
 				A9045F3C25798B3B00E8530C /* BTKUnitTestCase.m in Sources */,
 				A93AEDAC26A7096B00D8DA3F /* Device+SizeClasses.swift in Sources */,
-				A9045F3525798B3B00E8530C /* BTKIsEqualToGeometryValue.m in Sources */,
 				A93AEDDC26A70B7800D8DA3F /* SnapshotTestCaseRunStrategy.swift in Sources */,
 				6D721EF4292E20690000F871 /* URL+Fixture.swift in Sources */,
 				6D4DEEEA2888A4C300260666 /* DecodableError.swift in Sources */,
@@ -1072,7 +1050,6 @@
 			files = (
 				A9045F6425798B6000E8530C /* UIControl+SimulateEventTests.swift in Sources */,
 				A93AEDD426A709B100D8DA3F /* Device_FamilyTests.swift in Sources */,
-				A9045F7225798B6000E8530C /* BTKGeometryAssertTest.m in Sources */,
 				A9045F6725798B6000E8530C /* UIAlertController+ActionRetrievalBridgingTests.m in Sources */,
 				A93AEDD626A709B100D8DA3F /* Device_MultitaskingModesTests.swift in Sources */,
 				6D721EFC292E3D060000F871 /* Array+VoidTests.swift in Sources */,
@@ -1093,7 +1070,6 @@
 				A93AEDD026A709B100D8DA3F /* Device_SupportedOperatingSystemsTests.swift in Sources */,
 				A9045F6325798B6000E8530C /* UIView+SimulatedGesturesTests.swift in Sources */,
 				A9045F6825798B6000E8530C /* UIViewControllerObserverTests.swift in Sources */,
-				A9045F7125798B6000E8530C /* BTKIsEqualToGeometryValueTest.m in Sources */,
 				A9045F6925798B6000E8530C /* UIButton+SimulateTapBridgingTests.m in Sources */,
 				A93AEDD526A709B100D8DA3F /* Device_ScreenSizesTests.swift in Sources */,
 				A93AEDD926A709B100D8DA3F /* Device_SizeClassesTests.swift in Sources */,
