@@ -10,6 +10,7 @@
 #import <BandyerTestKit/BTKiOS12AndAboveTestCase.h>
 #import <BandyerTestKit/BTKiOS12AndBelowTestCase.h>
 #import <BandyerTestKit/BTKiOS13AndAboveTestCase.h>
+#import <BandyerTestKit/BTKiOS15AndAboveTestCase.h>
 
 #import <BandyerTestKit/NSExceptionCatcher.h>
 #import <BandyerTestKit/BTKGestureRecognizerActionsInvoker.h>
