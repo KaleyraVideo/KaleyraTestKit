@@ -2,7 +2,6 @@
 // See LICENSE.txt for licensing information
 
 #import <XCTest/XCTest.h>
-#import <OCHamcrest/OCHamcrest.h>
 #import <BandyerTestKit/BandyerTestKit.h>
 
 @interface BTKStopwatchBridgingTests : BTKUnitTestCase

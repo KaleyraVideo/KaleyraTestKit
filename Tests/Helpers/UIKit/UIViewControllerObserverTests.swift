@@ -19,7 +19,7 @@ class UIViewControllerObserverTests: XCTestCase {
 
         let _ = sut.view
 
-        assertThat(completionSpy.called, isTrue())
+        assertThat(completionSpy.invocations, hasCount(1))
     }
 
     func testViewWillAppearNotifiesListener() {
@@ -29,7 +29,7 @@ class UIViewControllerObserverTests: XCTestCase {
         let _ = sut.view
         sut.viewWillAppear(false)
 
-        assertThat(completionSpy.called, isTrue())
+        assertThat(completionSpy.invocations, hasCount(1))
     }
 
     func testViewDidAppearNotifiesListener() {
@@ -39,7 +39,7 @@ class UIViewControllerObserverTests: XCTestCase {
         let _ = sut.view
         sut.viewDidAppear(false)
 
-        assertThat(completionSpy.called, isTrue())
+        assertThat(completionSpy.invocations, hasCount(1))
     }
 
     func testViewDidAppearUpdatesHasViewAppearedFlag() {
@@ -58,7 +58,7 @@ class UIViewControllerObserverTests: XCTestCase {
         let _ = sut.view
         sut.viewWillDisappear(false)
 
-        assertThat(completionSpy.called, isTrue())
+        assertThat(completionSpy.invocations, hasCount(1))
     }
 
     func testViewDidDisappearNotifiesListener() {
@@ -68,7 +68,7 @@ class UIViewControllerObserverTests: XCTestCase {
         let _ = sut.view
         sut.viewDidDisappear(false)
 
-        assertThat(completionSpy.called, isTrue())
+        assertThat(completionSpy.invocations, hasCount(1))
     }
 
     func testViewDidDisappearUpdatesHasViewDisappearedFlag() {

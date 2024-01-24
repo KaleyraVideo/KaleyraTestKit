@@ -3,7 +3,6 @@
 
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
-#import <OCHamcrest/OCHamcrest.h>
 #import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIButton_SimulateTapBridgingTests : BTKUnitTestCase
@@ -24,8 +23,8 @@
 
     [sut simulateTap];
 
-    assertThatBool(didTouchDown, isTrue());
-    assertThatBool(didTouchUpInside, isTrue());
+    XCTAssertTrue(didTouchDown);
+    XCTAssertTrue(didTouchUpInside);
 }
 
 - (void)touchDown

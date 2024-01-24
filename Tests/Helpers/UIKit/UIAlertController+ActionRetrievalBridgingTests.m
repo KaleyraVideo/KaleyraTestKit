@@ -3,7 +3,6 @@
 
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
-#import <OCHamcrest/OCHamcrest.h>
 #import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIAlertController_ActionRetrievalBridgingTests : BTKUnitTestCase
@@ -24,7 +23,7 @@
 
          UIAlertAction *actualAction = [sut findActionIdentifiedBy:@"cancel"];
 
-         assertThat(actualAction, notNilValue());
+         XCTAssertNotNil(actualAction);
     );
 }
 
@@ -47,7 +46,7 @@
 
     UIAlertAction *actualAction = [sut findActionByTitle:@"title"];
 
-    assertThat(actualAction, notNilValue());
+    XCTAssertNotNil(actualAction);
 }
 
 @end

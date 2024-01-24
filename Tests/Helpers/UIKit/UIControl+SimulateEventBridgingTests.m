@@ -3,7 +3,6 @@
 
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
-#import <OCHamcrest/OCHamcrest.h>
 #import <BandyerTestKit/BandyerTestKit.h>
 
 @interface UIControl_SimulateEventBridgingTests : BTKUnitTestCase
@@ -22,7 +21,7 @@
 
     [button simulateEvent:UIControlEventTouchUpInside];
 
-    assertThatBool(actionInvoked, isTrue());
+    XCTAssertTrue(actionInvoked);
 }
 
 - (void)action

@@ -10,7 +10,7 @@ import SwiftHamcrest
 
 public func matchCase<T>(_ expected: T) -> Matcher<T> {
 
-    func caseName<T>(_ value: T) -> String {
+    func caseName(_ value: T) -> String {
         return Mirror(reflecting: value).children.first?.label ?? String(describing: value)
     }
 
@@ -26,7 +26,7 @@ public func matchCase<T>(_ expected: T) -> Matcher<T> {
 
 public func matchCaseWithAssociatedValue<T: Equatable>(_ expected: T) -> Matcher<T> {
 
-    func caseName<T>(_ value: T) -> String {
+    func caseName(_ value: T) -> String {
         return Mirror(reflecting: value).children.first?.label ?? String(describing: value)
     }
 
