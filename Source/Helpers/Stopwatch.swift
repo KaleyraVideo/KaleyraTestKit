@@ -3,8 +3,7 @@
 
 import Foundation
 
-@objc(BTKStopwatch)
-public class Stopwatch: NSObject {
+public class Stopwatch {
 
     internal private(set) var startTime: DispatchTime?
     internal private(set) var endTime: DispatchTime?
@@ -22,7 +21,6 @@ public class Stopwatch: NSObject {
         }
     }
 
-    @objc
     public var elapsedTimeInNanoseconds: UInt64 {
         guard let start = startTime,
               let end = endTime else {
@@ -34,13 +32,11 @@ public class Stopwatch: NSObject {
         return endNanosec - startNanosec
     }
 
-    @objc
     public func start() {
         endTime = nil
         startTime = DispatchTime.now()
     }
 
-    @objc
     public func stop() {
         endTime = DispatchTime.now()
     }
