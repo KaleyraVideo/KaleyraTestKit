@@ -7,7 +7,7 @@ import Hamcrest
 #elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
 #endif
-import BandyerTestKit
+import KaleyraTestKit
 
 class UIViewControllerObserverTests: XCTestCase {
 

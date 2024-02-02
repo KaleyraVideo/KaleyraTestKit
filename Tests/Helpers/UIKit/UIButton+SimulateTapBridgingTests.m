@@ -3,7 +3,7 @@
 
 #import <XCTest/XCTest.h>
 #import <UIKit/UIKit.h>
-#import <BandyerTestKit/BandyerTestKit.h>
+#import <KaleyraTestKit/KaleyraTestKit.h>
 
 @interface UIButton_SimulateTapBridgingTests : BTKUnitTestCase
 

@@ -82,8 +82,8 @@
 		A9045F6E25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */; };
 		A9045F6F25798B6000E8530C /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9045F5D25798B6000E8530C /* StopwatchTests.swift */; };
 		A9045F7B25798BBB00E8530C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9045F7A25798BBB00E8530C /* XCTest.framework */; };
-		A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* BandyerTestKit.framework */; };
-		A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* BandyerTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91AD44225798452004088D1 /* KaleyraTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91AD43825798452004088D1 /* KaleyraTestKit.framework */; };
+		A91AD44925798452004088D1 /* KaleyraTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A91AD43B25798452004088D1 /* KaleyraTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A940FED1257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */; };
 		A940FED2257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CFC77525C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFC77325C45A05000C39D4 /* BTKiOS12AndAboveTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -179,10 +179,10 @@
 		A9045F5C25798B6000E8530C /* OperatingSystemVersion+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+ExtensionTests.swift"; sourceTree = "<group>"; };
 		A9045F5D25798B6000E8530C /* StopwatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
 		A9045F7A25798BBB00E8530C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A91AD43825798452004088D1 /* BandyerTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BandyerTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A91AD43B25798452004088D1 /* BandyerTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BandyerTestKit.h; sourceTree = "<group>"; };
+		A91AD43825798452004088D1 /* KaleyraTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaleyraTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91AD43B25798452004088D1 /* KaleyraTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaleyraTestKit.h; sourceTree = "<group>"; };
 		A91AD43C25798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandyerTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91AD44125798452004088D1 /* KaleyraTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaleyraTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AD44825798452004088D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A940FECF257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKiOS10AndBelowTestCase.m; sourceTree = "<group>"; };
 		A940FED0257A37D400E9EEE6 /* BTKiOS10AndBelowTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKiOS10AndBelowTestCase.h; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91AD44225798452004088D1 /* BandyerTestKit.framework in Frameworks */,
+				A91AD44225798452004088D1 /* KaleyraTestKit.framework in Frameworks */,
 				6D17E3002B612E3600B5A328 /* SwiftHamcrest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,8 +488,8 @@
 		A91AD43925798452004088D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A91AD43825798452004088D1 /* BandyerTestKit.framework */,
-				A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */,
+				A91AD43825798452004088D1 /* KaleyraTestKit.framework */,
+				A91AD44125798452004088D1 /* KaleyraTestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -498,7 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				6D4DEEDB2888A46C00260666 /* Assertions */,
-				A91AD43B25798452004088D1 /* BandyerTestKit.h */,
+				A91AD43B25798452004088D1 /* KaleyraTestKit.h */,
 				A9045F0725798B3A00E8530C /* Base */,
 				A9045EFA25798B3A00E8530C /* Extensions */,
 				A9045EDD25798B3A00E8530C /* Helpers */,
@@ -546,16 +546,16 @@
 				A9045F4025798B3B00E8530C /* BTKiOS10AndAboveTestCase.h in Headers */,
 				A9045F4225798B3B00E8530C /* BTKiOS11AndAboveTestCase.h in Headers */,
 				6D17E3072B612F4200B5A328 /* BTKiOS15AndAboveTestCase.h in Headers */,
-				A91AD44925798452004088D1 /* BandyerTestKit.h in Headers */,
+				A91AD44925798452004088D1 /* KaleyraTestKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A91AD43725798452004088D1 /* BandyerTestKit */ = {
+		A91AD43725798452004088D1 /* KaleyraTestKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A91AD44C25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKit" */;
+			buildConfigurationList = A91AD44C25798452004088D1 /* Build configuration list for PBXNativeTarget "KaleyraTestKit" */;
 			buildPhases = (
 				A91AD43325798452004088D1 /* Headers */,
 				A91AD43425798452004088D1 /* Sources */,
@@ -567,17 +567,17 @@
 			dependencies = (
 				6D17E3022B612E3E00B5A328 /* PBXTargetDependency */,
 			);
-			name = BandyerTestKit;
+			name = KaleyraTestKit;
 			packageProductDependencies = (
 				6D17E3092B61301C00B5A328 /* SwiftHamcrest */,
 			);
 			productName = BandyerTestKit;
-			productReference = A91AD43825798452004088D1 /* BandyerTestKit.framework */;
+			productReference = A91AD43825798452004088D1 /* KaleyraTestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A91AD44025798452004088D1 /* BandyerTestKitTests */ = {
+		A91AD44025798452004088D1 /* KaleyraTestKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A91AD44F25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKitTests" */;
+			buildConfigurationList = A91AD44F25798452004088D1 /* Build configuration list for PBXNativeTarget "KaleyraTestKitTests" */;
 			buildPhases = (
 				A91AD43D25798452004088D1 /* Sources */,
 				A91AD43E25798452004088D1 /* Frameworks */,
@@ -588,12 +588,12 @@
 			dependencies = (
 				A91AD44425798452004088D1 /* PBXTargetDependency */,
 			);
-			name = BandyerTestKitTests;
+			name = KaleyraTestKitTests;
 			packageProductDependencies = (
 				6D17E2FF2B612E3600B5A328 /* SwiftHamcrest */,
 			);
 			productName = BandyerTestKitTests;
-			productReference = A91AD44125798452004088D1 /* BandyerTestKitTests.xctest */;
+			productReference = A91AD44125798452004088D1 /* KaleyraTestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -615,7 +615,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A91AD43225798452004088D1 /* Build configuration list for PBXProject "BandyerTestKit" */;
+			buildConfigurationList = A91AD43225798452004088D1 /* Build configuration list for PBXProject "KaleyraTestKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -631,8 +631,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A91AD43725798452004088D1 /* BandyerTestKit */,
-				A91AD44025798452004088D1 /* BandyerTestKitTests */,
+				A91AD43725798452004088D1 /* KaleyraTestKit */,
+				A91AD44025798452004088D1 /* KaleyraTestKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -746,7 +746,7 @@
 		};
 		A91AD44425798452004088D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A91AD43725798452004088D1 /* BandyerTestKit */;
+			target = A91AD43725798452004088D1 /* KaleyraTestKit */;
 			targetProxy = A91AD44325798452004088D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -891,7 +891,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleyra.KaleyraTestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -917,7 +917,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleyra.KaleyraTestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -938,7 +938,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleyra.KaleyraTestKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -957,7 +957,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandyer.BandyerTestKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaleyra.KaleyraTestKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -967,7 +967,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A91AD43225798452004088D1 /* Build configuration list for PBXProject "BandyerTestKit" */ = {
+		A91AD43225798452004088D1 /* Build configuration list for PBXProject "KaleyraTestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91AD44A25798452004088D1 /* Debug */,
@@ -976,7 +976,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A91AD44C25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKit" */ = {
+		A91AD44C25798452004088D1 /* Build configuration list for PBXNativeTarget "KaleyraTestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91AD44D25798452004088D1 /* Debug */,
@@ -985,7 +985,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A91AD44F25798452004088D1 /* Build configuration list for PBXNativeTarget "BandyerTestKitTests" */ = {
+		A91AD44F25798452004088D1 /* Build configuration list for PBXNativeTarget "KaleyraTestKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91AD45025798452004088D1 /* Debug */,

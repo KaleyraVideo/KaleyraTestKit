@@ -8,7 +8,7 @@ import Hamcrest
 #elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
 #endif
-import BandyerTestKit
+import KaleyraTestKit
 
 final class UIAlertController_ActionRetrievalTests: UnitTestCase, ConditionalTestCase {
 

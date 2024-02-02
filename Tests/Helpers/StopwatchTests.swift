@@ -7,7 +7,7 @@ import Hamcrest
 #elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
 #endif
-@testable import BandyerTestKit
+@testable import KaleyraTestKit
 
 final class StopwatchTests: UnitTestCase {
 

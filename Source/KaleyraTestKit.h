@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
-#import <BandyerTestKit/BTKBase.h>
+#import <KaleyraTestKit/BTKBase.h>
 
-FOUNDATION_EXPORT double BandyerTestKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char BandyerTestKitVersionString[];
+FOUNDATION_EXPORT double KaleyraTestKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char KaleyraTestKitVersionString[];
