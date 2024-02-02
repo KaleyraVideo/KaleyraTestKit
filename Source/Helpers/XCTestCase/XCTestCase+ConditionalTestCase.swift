@@ -7,7 +7,7 @@ import XCTest
 public protocol ConditionalTestCase: XCTestCase {
 
     func run(ifVersionAtLeast major: UInt, _ message: @autoclosure () -> String, function: StaticString, file: StaticString, line: UInt, runnable: () throws -> Void) throws
-    
+
     func run(ifVersionAtLeast version: OperatingSystemVersion, _ message: @autoclosure () -> String, function: StaticString, file: StaticString, line: UInt, runnable: () throws -> Void) throws
 
     func run(ifVersionBelow major: UInt, _ message: @autoclosure () -> String, function: StaticString, file: StaticString, line: UInt, runnable: () throws -> Void) throws

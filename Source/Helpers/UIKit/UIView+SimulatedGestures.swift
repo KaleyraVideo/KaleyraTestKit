@@ -4,7 +4,9 @@
 import UIKit
 
 public extension UIView {
-    
+
+    struct GestureRecognizerNotFoundError: Error {}
+
     func simulateTapRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
         try simulateGestureRecognition(UITapGestureRecognizer.self, file: file, line: line)
     }
@@ -38,9 +40,23 @@ public extension UIView {
     }
 
     private func invokeAction(on recognizer: UIGestureRecognizer) {
-        let invoker = GestureRecognizerActionsInvoker()
-        invoker.invokeActions(on: recognizer)
+        Invoker.invokeActions(on: recognizer)
+    }
+
+    private enum Invoker {
+
+        static func invokeActions(on recognizer: UIGestureRecognizer) {
+            let targetClass: AnyClass? = NSClassFromString("UIGestureRecognizerTarget")
+            guard let targetIvar = class_getInstanceVariable(targetClass, "_target") else { return }
+            guard let actionIvar = class_getInstanceVariable(targetClass, "_action") else { return }
+            guard let targets = recognizer.value(forKey: "targets") as? [AnyObject] else { return }
+
+            for target in targets {
+                let targetObject = object_getIvar(target, targetIvar) as AnyObject
+                let selector = (Unmanaged.passUnretained(target).toOpaque() + ivar_getOffset(actionIvar)).assumingMemoryBound(to: Selector.self)
+
+                _ = targetObject.perform(selector.pointee, with: recognizer)
+            }
+        }
     }
 }
-
-struct GestureRecognizerNotFoundError: Error {}

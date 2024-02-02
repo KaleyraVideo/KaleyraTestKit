@@ -2,6 +2,7 @@
 // See LICENSE for licensing information
 
 import Foundation
+import UIKit
 
 @available(iOS 13.0, *)
 public extension UIColor {

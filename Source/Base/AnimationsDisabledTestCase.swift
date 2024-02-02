@@ -4,14 +4,13 @@
 import XCTest
 import UIKit
 
-@objc(BTKAnimationsDisabledTestCase)
 open class AnimationsDisabledTestCase: UnitTestCase {
-    
+
     open override func setUp() {
         super.setUp()
         UIView.setAnimationsEnabled(false)
     }
-    
+
     open override func tearDown() {
         CATransaction.flush()
         super.tearDown()

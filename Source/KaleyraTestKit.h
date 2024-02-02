@@ -2,8 +2,6 @@
 // See LICENSE.txt for licensing information
 
 #import <Foundation/Foundation.h>
-#import <XCTest/XCTest.h>
-#import <KaleyraTestKit/BTKBase.h>
 
 FOUNDATION_EXPORT double KaleyraTestKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char KaleyraTestKitVersionString[];
