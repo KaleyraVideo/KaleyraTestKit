@@ -2,14 +2,12 @@
 // See LICENSE.txt for licensing information
 
 import XCTest
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 import KaleyraTestKit
+import KaleyraTestHelpers
+import KaleyraTestMatchers
 
-class UIViewControllerObserverTests: XCTestCase {
+final class UIViewControllerObserverTests: UnitTestCase {
 
     private let sut = UIViewControllerObserver()
 

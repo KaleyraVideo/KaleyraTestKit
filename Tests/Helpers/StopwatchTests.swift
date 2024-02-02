@@ -2,12 +2,9 @@
 // See LICENSE.txt for licensing information
 
 import XCTest
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
-@testable import KaleyraTestKit
+import KaleyraTestKit
+@testable import KaleyraTestHelpers
 
 final class StopwatchTests: UnitTestCase {
 

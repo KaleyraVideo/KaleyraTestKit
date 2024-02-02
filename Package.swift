@@ -7,18 +7,28 @@ let package = Package(
     platforms: [.iOS(.v10)],
     products: [
         .library(name: "KaleyraTestKit", targets: ["KaleyraTestKit"]),
-        .library(name: "KaleyraTestHelpers", targets: ["KaleyraTestHelpers"])
+        .library(name: "KaleyraTestHelpers", targets: ["KaleyraTestHelpers"]),
+        .library(name: "KaleyraTestMatchers", targets: ["KaleyraTestMatchers"])
     ],
     dependencies: [
         .package(url: "https://github.com/nschum/SwiftHamcrest", .upToNextMajor(from: "2.2.4"))
     ],
     targets: [
-        .target(name: "KaleyraTestKit", path: "Source", sources: ["Base"]),
-        .target(name: "KaleyraTestHelpers", path: "Source", sources: ["Helpers"]),
-        .testTarget(
-            name: "KaleyraTestKitTests",
-            dependencies: ["KaleyraTestKit"],
-            path: "Tests")
+        .target(name: "KaleyraTestKit", 
+                dependencies: ["KaleyraTestHelpers"],
+                path: "Source",
+                sources: ["Base"]),
+        .target(name: "KaleyraTestHelpers",
+                path: "Source",
+                sources: ["Helpers"]
+        ),
+        .target(name: "KaleyraTestMatchers",
+                dependencies: ["SwiftHamcrest"],
+                path: "Source",
+                sources: ["Matchers"]),
+        .testTarget(name: "KaleyraTestKitTests",
+                    dependencies: ["KaleyraTestKit", "SwiftHamcrest", "KaleyraTestMatchers"],
+                    path: "Tests")
     ],
     swiftLanguageVersions: [.v5]
 )

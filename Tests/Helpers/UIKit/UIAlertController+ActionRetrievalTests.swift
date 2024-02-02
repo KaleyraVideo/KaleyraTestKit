@@ -3,12 +3,9 @@
 
 import XCTest
 import UIKit
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 import KaleyraTestKit
+import KaleyraTestHelpers
 
 final class UIAlertController_ActionRetrievalTests: UnitTestCase, ConditionalTestCase {
 

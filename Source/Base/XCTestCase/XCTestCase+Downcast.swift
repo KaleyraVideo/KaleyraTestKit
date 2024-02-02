@@ -3,6 +3,7 @@
 
 import Foundation
 import XCTest
+import KaleyraTestHelpers
 
 public extension XCTestCase {
 
