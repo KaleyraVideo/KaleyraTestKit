@@ -81,6 +81,16 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "KaleyraSnapshotTestUnitTests"
+               BuildableName = "KaleyraSnapshotTestUnitTests"
+               BlueprintName = "KaleyraSnapshotTestUnitTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

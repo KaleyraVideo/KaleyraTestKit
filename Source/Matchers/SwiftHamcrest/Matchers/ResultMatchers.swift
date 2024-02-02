@@ -2,11 +2,7 @@
 // See LICENSE.txt for licensing information
 
 import Foundation
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 
 public func isSuccess<T, E>() -> Matcher<Result<T, E>> where E: Error {
     return isSuccess(withValue: anything())

@@ -2,11 +2,7 @@
 // See LICENSE for licensing information
 
 import Foundation
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 
 @discardableResult
 public func assertThatCGFloat(_ actualValue: CGFloat,

@@ -2,12 +2,9 @@
 // See LICENSE for licensing information
 
 import XCTest
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
-@testable import BandyerTestKit
+import KaleyraTestKit
+@testable import KaleyraSnapshotTest
 
 final class Device_SizeClassesTests: UnitTestCase {
 

@@ -3,12 +3,9 @@
 
 import XCTest
 import UIKit
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
-import BandyerTestKit
+import KaleyraTestKit
+@testable import KaleyraSnapshotTest
 
 final class Screen_UIScreenTests: UnitTestCase {
 

@@ -6,7 +6,7 @@ import XCTest
 import iOSSnapshotTestCase
 
 open class SnapshotTestCase: FBSnapshotTestCase {
-    
+
     open override func setUp() {
         super.setUp()
 

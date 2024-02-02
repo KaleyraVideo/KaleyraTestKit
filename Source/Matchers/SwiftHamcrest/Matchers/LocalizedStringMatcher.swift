@@ -2,11 +2,7 @@
 // See LICENSE for licensing information
 
 import Foundation
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 
 public func equalToLocalizedString(_ key: String, bundle: Bundle, table: String? = "Localizable") -> Matcher<String> {
     let f = equalTo(NSLocalizedString(key, tableName: table, bundle: bundle, comment: ""))

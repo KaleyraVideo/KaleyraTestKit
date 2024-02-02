@@ -2,12 +2,10 @@
 // See LICENSE for licensing information
 
 import XCTest
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
-@testable import BandyerTestKit
+import KaleyraTestKit
+import KaleyraTestMatchers
+@testable import KaleyraSnapshotTest
 
 final class SnapshotVariantTests: UnitTestCase, ConditionalTestCase {
 

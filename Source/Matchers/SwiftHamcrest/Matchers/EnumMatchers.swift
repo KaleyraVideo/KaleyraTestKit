@@ -2,11 +2,7 @@
 // See LICENSE.txt for licensing information
 
 import Foundation
-#if canImport(Hamcrest)
-import Hamcrest
-#elseif canImport(SwiftHamcrest)
 import SwiftHamcrest
-#endif
 
 public func matchCase<T>(_ expected: T) -> Matcher<T> {
 
