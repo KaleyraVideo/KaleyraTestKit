@@ -34,30 +34,24 @@ public extension UIView {
     }
 }
 
-@objc
 public extension UIView {
 
-    @objc(btk_allDescendantsOfType:)
     func allDescendants(ofType type: AnyClass) -> [UIView] {
         allDescendants().filter { $0.isKind(of: type) }
     }
 
-    @objc(btk_firstDescendantOfType:)
     func firstDescendant(ofType type: AnyClass) -> UIView? {
         allDescendants(ofType: type).first
     }
 
-    @objc(btk_firstDescendantOfType:identifiedBy:)
     func firstDescendant(ofType type: AnyClass, identifiedBy accessibilityIdentifier: String) -> UIView? {
         allDescendants(ofType: type).filter({ $0.accessibilityIdentifier == accessibilityIdentifier }).first
     }
 
-    @objc(btk_allSubviewsOfType:)
     func allSubviews(ofType type: AnyClass) -> [UIView] {
         allSubviews().filter { $0.isKind(of: type) }
     }
 
-    @objc(btk_firstSubviewOfType:)
     func firstSubview(ofType type: AnyClass) -> UIView? {
         allSubviews(ofType: type).first
     }

@@ -3,19 +3,16 @@
 
 import Foundation
 
-@available(iOS 12.0, *)
 enum DateCreationError: Error {
     case invalidDate(DateComponents)
 }
 
-@available(iOS 12.0, *)
 public protocol DateFactory {
 
     func makeDate(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, millisecond: Int, timezone: TimeZone?) throws -> Date
     static func makeDate(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, millisecond: Int, timezone: TimeZone?) throws -> Date
 }
 
-@available(iOS 12.0, *)
 public extension DateFactory {
 
     func makeDate(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, millisecond: Int = 0, timezone: TimeZone? = TimeZone(abbreviation: "UTC")) throws -> Date {
@@ -46,7 +43,6 @@ public extension DateFactory {
     }
 }
 
-@available(iOS 12.0, *)
 extension Date: DateFactory {
 
     public init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int = 0, millisecond: Int = 0, timeZone: TimeZone? = TimeZone(abbreviation: "UTC")) throws {

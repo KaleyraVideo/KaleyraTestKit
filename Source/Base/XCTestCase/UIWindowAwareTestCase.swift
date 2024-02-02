@@ -4,6 +4,7 @@
 import Foundation
 import UIKit
 import XCTest
+import KaleyraTestHelpers
 
 public protocol UIWindowAwareTestCase: XCTestCase {
 
