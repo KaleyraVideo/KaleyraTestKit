@@ -295,10 +295,6 @@ final class Device_SizeClassesTests: UnitTestCase {
                                               error: AnError,
                                               file: String = #filePath,
                                               line: UInt = #line) where AnError: Equatable {
-        #if canImport(Hamcrest)
-            Hamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
-        #elseif canImport(SwiftHamcrest)
-            SwiftHamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
-        #endif
+        SwiftHamcrest.assertThrows(try Device(model: model).screenSizeClassesFor(orientation: orientation, multitaskingMode: mode), error, file: file, line: line)
     }
 }
