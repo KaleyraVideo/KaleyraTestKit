@@ -13,7 +13,7 @@ final class UIViewControllerObserverTests: UnitTestCase {
 
     func testViewDidLoadNotifiesListener() {
         let completionSpy = CompletionSpy<Void>()
-        sut.onViewDidLoad = completionSpy.callable
+        sut.onViewDidLoad = completionSpy.callAsFunction
 
         let _ = sut.view
 
@@ -22,7 +22,7 @@ final class UIViewControllerObserverTests: UnitTestCase {
 
     func testViewWillAppearNotifiesListener() {
         let completionSpy = CompletionSpy<Void>()
-        sut.onViewWillAppear = completionSpy.callable
+        sut.onViewWillAppear = completionSpy.callAsFunction
 
         let _ = sut.view
         sut.viewWillAppear(false)
@@ -32,7 +32,7 @@ final class UIViewControllerObserverTests: UnitTestCase {
 
     func testViewDidAppearNotifiesListener() {
         let completionSpy = CompletionSpy<Void>()
-        sut.onViewDidAppear = completionSpy.callable
+        sut.onViewDidAppear = completionSpy.callAsFunction
 
         let _ = sut.view
         sut.viewDidAppear(false)
@@ -51,7 +51,7 @@ final class UIViewControllerObserverTests: UnitTestCase {
 
     func testViewWillDisappearNotifiesListener() {
         let completionSpy = CompletionSpy<Void>()
-        sut.onViewWillDisappear = completionSpy.callable
+        sut.onViewWillDisappear = completionSpy.callAsFunction
 
         let _ = sut.view
         sut.viewWillDisappear(false)
@@ -61,7 +61,7 @@ final class UIViewControllerObserverTests: UnitTestCase {
 
     func testViewDidDisappearNotifiesListener() {
         let completionSpy = CompletionSpy<Void>()
-        sut.onViewDidDisappear = completionSpy.callable
+        sut.onViewDidDisappear = completionSpy.callAsFunction
 
         let _ = sut.view
         sut.viewDidDisappear(false)

@@ -9,18 +9,14 @@ public class CompletionSpy<T> {
 
     public init() {}
 
-    public func callable(_ arg: T) -> Void {
+    public func callAsFunction(_ arg: T) {
         invocations.append(arg)
-    }
-
-    public func callAsFunction(_ arg: T) -> Void {
-        callable(arg)
     }
 }
 
 public extension CompletionSpy where T == Void {
-    
-    func callable() -> Void {
+
+    func callAsFunction() {
         invocations.append()
     }
 }
