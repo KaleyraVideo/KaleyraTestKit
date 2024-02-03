@@ -75,10 +75,10 @@ private extension Target.Dependency {
     }
 
     static var hamcrest: Target.Dependency {
-        .productItem(name: "SwiftHamcrest", package: "SwiftHamcrest")
+        .productItem(name: "SwiftHamcrest", package: "SwiftHamcrest", condition: .when(platforms: [.iOS]))
     }
 
     static var iOSSnapshotTestCase: Target.Dependency {
-        .productItem(name: "iOSSnapshotTestCase", package: "ios-snapshot-test-case")
+        .productItem(name: "iOSSnapshotTestCase", package: "ios-snapshot-test-case", condition: .when(platforms: [.iOS]))
     }
 }
