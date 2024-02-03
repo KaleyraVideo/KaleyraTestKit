@@ -2,6 +2,7 @@
 // See LICENSE for licensing information
 
 import Foundation
+import UIKit
 import SwiftHamcrest
 
 @discardableResult

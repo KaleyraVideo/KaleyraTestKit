@@ -2,6 +2,7 @@
 // See LICENSE.txt for licensing information
 
 import Foundation
+import Dispatch
 
 public class Stopwatch {
 
