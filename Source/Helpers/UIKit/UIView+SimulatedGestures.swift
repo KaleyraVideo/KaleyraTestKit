@@ -7,21 +7,19 @@ public extension UIView {
 
     struct GestureRecognizerNotFoundError: Error {}
 
-    func simulateTapRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
-        try simulateGestureRecognition(UITapGestureRecognizer.self, file: file, line: line)
+    func simulateTapRecognition() throws {
+        try simulateGestureRecognition(UITapGestureRecognizer.self)
     }
     
-    func simulateSwipeRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
-        try simulateGestureRecognition(UISwipeGestureRecognizer.self, file: file, line: line)
+    func simulateSwipeRecognition() throws {
+        try simulateGestureRecognition(UISwipeGestureRecognizer.self)
     }
 
-    func simulateLongPressRecognition(file: StaticString = #filePath, line: UInt = #line) throws {
-        try simulateGestureRecognition(UILongPressGestureRecognizer.self, file: file, line: line)
+    func simulateLongPressRecognition() throws {
+        try simulateGestureRecognition(UILongPressGestureRecognizer.self)
     }
 
-    func simulateGestureRecognition<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type,
-                                                                    file: StaticString = #filePath,
-                                                                    line: UInt = #line) throws {
+    func simulateGestureRecognition<Recognizer: UIGestureRecognizer>(_ type: Recognizer.Type) throws {
         let recognizers = allEnabledRecognizers(Recognizer.self)
 
         guard !recognizers.isEmpty else {
@@ -52,6 +50,7 @@ public extension UIView {
             guard let targets = recognizer.value(forKey: "targets") as? [AnyObject] else { return }
 
             for target in targets {
+                guard NSStringFromClass(type(of: target)) == "UIGestureRecognizerTarget" else { continue }
                 let targetObject = object_getIvar(target, targetIvar) as AnyObject
                 let selector = (Unmanaged.passUnretained(target).toOpaque() + ivar_getOffset(actionIvar)).assumingMemoryBound(to: Selector.self)
 
