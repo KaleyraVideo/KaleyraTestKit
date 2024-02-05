@@ -51,7 +51,9 @@ public extension UIView {
 
             for target in targets {
                 guard NSStringFromClass(type(of: target)) == "UIGestureRecognizerTarget" else { continue }
-                let targetObject = object_getIvar(target, targetIvar) as AnyObject
+                guard let targetObject = object_getIvar(target, targetIvar) as? NSObject else { continue }
+                guard type(of: targetObject) != NSNull.self else { continue }
+
                 let selector = (Unmanaged.passUnretained(target).toOpaque() + ivar_getOffset(actionIvar)).assumingMemoryBound(to: Selector.self)
 
                 _ = targetObject.perform(selector.pointee, with: recognizer)
