@@ -52,6 +52,22 @@ public extension UIWindowAwareTestCase {
         return window
     }
 
+#if swift(>=5.10)
+
+    private func hideWindowOnTeardown(_ window: UIWindow, observer: UIViewControllerObserver) {
+        guard #available(iOS 13.0, *) else { return }
+
+        addTeardownBlock {
+            window.hideForRelease()
+
+            while !observer.hasViewDisappeared {
+                RunLoop.current.run(mode: .default, before: Date.distantFuture)
+            }
+        }
+    }
+
+#else
+
     private func hideWindowOnTeardown(_ window: UIWindow, observer: UIViewControllerObserver) {
         addTeardownBlock {
             window.hideForRelease()
@@ -61,6 +77,8 @@ public extension UIWindowAwareTestCase {
             }
         }
     }
+
+#endif
 }
 
 public extension UIWindow {
