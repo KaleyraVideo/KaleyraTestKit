@@ -18,30 +18,14 @@ public extension XCTestCase {
     }
 
     func skipIf(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String?, function: StaticString = #function, file: StaticString = #filePath, line: UInt = #line) throws {
-        #if SKIP_TEST_UNAVAILABLE
-            if try expression() {
-                throw SkipNotAvailableError(function: function, location: SourceLocation(file: file, line: line), message: message())
-            }
-        #else
             try XCTSkipIf(expression(), message(), file: file, line: line)
-        #endif
     }
 
     func skipUnless(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String?, function: StaticString = #function, file: StaticString = #filePath, line: UInt = #line) throws {
-        #if SKIP_TEST_UNAVAILABLE
-            if try !expression() {
-                throw SkipNotAvailableError(function: function, location: SourceLocation(file: file, line: line), message: message())
-            }
-        #else
             try XCTSkipUnless(expression(), message(), file: file, line: line)
-        #endif
     }
 
     func skip(_ message: @autoclosure () -> String, function: StaticString = #function, file: StaticString = #filePath, line: UInt = #line) throws {
-        #if SKIP_TEST_UNAVAILABLE
-            throw SkipNotAvailableError(function: function, location: SourceLocation(file: file, line: line), message: message())
-        #else
-            try XCTSkipIf(true, message(), file: file, line: line)
-        #endif
+        try XCTSkipIf(true, message(), file: file, line: line)
     }
 }

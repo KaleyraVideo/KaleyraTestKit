@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -75,10 +75,10 @@ private extension Target.Dependency {
     }
 
     static var hamcrest: Target.Dependency {
-        .productItem(name: "SwiftHamcrest", package: "SwiftHamcrest", condition: .when(platforms: [.iOS]))
+        .product(name: "SwiftHamcrest", package: "SwiftHamcrest", condition: .when(platforms: [.iOS]))
     }
 
     static var iOSSnapshotTestCase: Target.Dependency {
-        .productItem(name: "iOSSnapshotTestCase", package: "ios-snapshot-test-case", condition: .when(platforms: [.iOS]))
+        .product(name: "iOSSnapshotTestCase", package: "ios-snapshot-test-case", condition: .when(platforms: [.iOS]))
     }
 }

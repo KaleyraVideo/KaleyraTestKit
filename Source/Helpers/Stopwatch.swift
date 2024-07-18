@@ -15,11 +15,7 @@ public class Stopwatch {
             return DispatchTimeInterval.never
         }
 
-        if #available(iOS 13.0, *) {
-            return start.distance(to: end)
-        } else {
-            return .nanoseconds(Int(elapsedTimeInNanoseconds))
-        }
+        return start.distance(to: end)
     }
 
     public var elapsedTimeInNanoseconds: UInt64 {

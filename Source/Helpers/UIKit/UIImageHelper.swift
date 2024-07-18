@@ -24,7 +24,6 @@ public class UIImageHelper {
         return image
     }
 
-    @available(iOS 13.0, *)
     public static func makeImage(systemName name: String) throws -> UIImage {
         guard let image = UIImage(systemName: name, compatibleWith: nil) else {
             throw UIImageError.invalidImageName(name)

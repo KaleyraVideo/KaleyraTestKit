@@ -4,7 +4,6 @@
 import Foundation
 import UIKit
 
-@available(iOS 13.0, *)
 public extension Screen.Style {
 
     var traitCollection: UITraitCollection {

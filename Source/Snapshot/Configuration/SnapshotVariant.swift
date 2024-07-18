@@ -121,10 +121,7 @@ public extension SnapshotVariant {
 
     var traitCollection: UITraitCollection {
         var traits = [UITraitCollection?]()
-        if #available(iOS 13.0, *) {
-            traits.append(style.traitCollection)
-        }
-
+        traits.append(style.traitCollection)
         traits.append(layoutDirection.traitCollection)
         traits.append(contentSize.traitCollection)
 
@@ -139,13 +136,13 @@ public extension SnapshotVariant {
         if device.family == .phone && multitaskingMode != .none {
             throw UnsupportedSnapshotConfigurationError()
         }
-        
+
         let screenSize = try device.screenSizeFor(orientation: orientation, multitaskingMode: multitaskingMode)
         let screenSizeClasses = try device.screenSizeClassesFor(orientation: orientation, multitaskingMode: multitaskingMode)
         return SnapshotConfiguration(size: screenSize,
-                                           safeAreaInsets: device.safeAreaInsetsFor(orientation: orientation),
-                                           layoutMargins: .zero,
-                                           traitCollection: UITraitCollection(traitsFrom: [traitCollection, screenSizeClasses.traitCollection]))
+                                     safeAreaInsets: device.safeAreaInsetsFor(orientation: orientation),
+                                     layoutMargins: .zero,
+                                     traitCollection: UITraitCollection(traitsFrom: [traitCollection, screenSizeClasses.traitCollection]))
     }
 }
 

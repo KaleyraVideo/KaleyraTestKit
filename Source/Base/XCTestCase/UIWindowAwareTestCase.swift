@@ -16,11 +16,7 @@ public protocol UIWindowAwareTestCase: XCTestCase {
 public extension UIWindowAwareTestCase {
 
     func makeWindow() -> UIWindow {
-        if #available(iOS 13.0, *) {
-            return UIWindow(windowScene: UIApplication.shared.connectedScenes.first as! UIWindowScene)
-        } else {
-            return UIWindow(frame: UIScreen.main.bounds)
-        }
+        .init(windowScene: UIApplication.shared.connectedScenes.first as! UIWindowScene)
     }
 
     func show(window: UIWindow, asKey isKey: Bool, controller: UIViewController) {
@@ -78,9 +74,6 @@ public extension UIWindow {
     func hideForRelease() {
         isHidden = true
         rootViewController = nil
-
-        if #available(iOS 13.0, *) {
-            windowScene = nil
-        }
+        windowScene = nil
     }
 }
